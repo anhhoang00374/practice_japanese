@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]      # Mỗi lần push main là deploy
+  workflow_dispatch:           # Cho phép chạy tay
+
+permissions:
+  contents: write              # Cần để push lên gh-pages
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # SPA fallback: giúp refresh route con không 404
+      - name: Add 404 fallback for SPA
+        run: cp dist/index.html dist/404.html
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # cname: your.domain.com   # nếu dùng custom domain thì mở dòng này và sửa
