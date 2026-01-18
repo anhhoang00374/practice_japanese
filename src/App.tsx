@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Timer, Award, RefreshCw, Check, X} from 'lucide-react';
-
+import dataQuizTemplates  from "./Data.tsx";
 // ===== DATA COMMON - Clone và chỉnh sửa để tạo bài kiểm tra mới =====
 const LEARNED_VOCABULARY = [
     'ほん', 'えんぴつ', 'けしゴム', 'つくえ', 'いす',
@@ -8,139 +8,7 @@ const LEARNED_VOCABULARY = [
     'がくせい', 'きょうしつ', 'とけい', 'まど', 'ドア'
 ];
 
-const quizTemplates = {
-    quiz1: {
-        title: "Bài kiểm tra 1: Từ vựng cơ bản",
-        description: "Các từ vựng về đồ dùng học tập",
-        exercises: {
-            exercise1: [
-                {
-                    question: "Từ 'ほん' có nghĩa là gì?",
-                    options: ["Quyển sách", "Bút chì", "Cục tẩy", "Cặp sách"],
-                    correct: 0
-                },
-                {
-                    question: "Từ 'えんぴつ' có nghĩa là gì?",
-                    options: ["Quyển sách", "Bút chì", "Cục tẩy", "Bàn học"],
-                    correct: 1
-                },
-                {
-                    question: "Từ 'がっこう' có nghĩa là gì?",
-                    options: ["Giáo viên", "Học sinh", "Trường học", "Lớp học"],
-                    correct: 2
-                }
-            ],
-            exercise2: {
-                columnA: [
-                    {id: 1, text: "これは なんですか。"},
-                    {id: 2, text: "それは ほんですか。"},
-                    {id: 3, text: "あれは だれですか。"}
-                ],
-                columnB: [
-                    {id: 1, text: "ほんです。"},
-                    {id: 2, text: "いいえ、ノートです。"},
-                    {id: 3, text: "せんせいです。"}
-                ]
-            },
-            exercise3: [
-                {
-                    words: [
-                        "ほん",
-                        "ノート",
-                        "かばん"
-                    ],
-                    correctAnswer: "ん",
-                    hint: "Chữ cái này xuất hiện ở cuối nhiều từ tiếng Nhật"
-                },
-                {
-                    words: [
-                        "ねこ",
-                        "いぬ",
-                        "さかな"
-                    ],
-                    correctAnswer: "な",
-                    hint: "Chữ cái trong bảng Hiragana, hàng 'な'"
-                }
-            ],
-            exercise4: [
-                {
-                    words: [
-                        ["T ", " e ", " ?"],
-                        ["? ", " い ", " ?"],
-                        ["? ", " 2 ", " 3"]
-                    ],
-                    correctSequence: ["Tet", "あいう", "123"]
-                }
-            ],
-            exercise5: [
-                {vietnamese: "Quyển sách", japanese: "ほん"},
-                {vietnamese: "Bút chì", japanese: "えんぴつ"},
-                {vietnamese: "Cục tẩy", japanese: "けしゴム"}
-            ],
-            exercise6: [
-                {
-                    sentence: "これは _____ です。",
-                    options: ["ほん", "ほんが", "ほんを", "ほんに"],
-                    correct: 0
-                },
-                {
-                    sentence: "わたしは がくせい _____ 。",
-                    options: ["が", "を", "です", "に"],
-                    correct: 2
-                }
-            ]
-        }
-    },
-    quiz2: {
-        title: "Bài kiểm tra 2: Ngữ pháp cơ bản",
-        description: "Luyện tập ngữ pháp và câu mẫu",
-        exercises: {
-            exercise1: [
-                {
-                    question: "Trợ từ nào dùng để chỉ chủ ngữ?",
-                    options: ["を", "は", "に", "で"],
-                    correct: 1
-                },
-                {
-                    question: "'です' có nghĩa là gì?",
-                    options: ["Là/Thì", "Có", "Không", "Làm"],
-                    correct: 0
-                }
-            ],
-            exercise2: {
-                columnA: [
-                    {id: 1, text: "ありがとう"},
-                    {id: 2, text: "おはよう"}
-                ],
-                columnB: [
-                    {id: 1, text: "ございます"},
-                    {id: 2, text: "ございます"}
-                ]
-            },
-            exercise3: [
-                {
-                    words: ["_んぴつ", "_す", "_ばん"],
-                    correctLetter: "え",
-                    hint: "Chữ cái trong bảng Hiragana, hàng 'あ'"
-                }
-            ],
-            exercise4: [
-                {words: ["えんぴつ", "つくえ", "えき"], sequence: ["えんぴつ", "つくえ", "えき"]}
-            ],
-            exercise5: [
-                {vietnamese: "Trường học", japanese: "がっこう"},
-                {vietnamese: "Giáo viên", japanese: "せんせい"}
-            ],
-            exercise6: [
-                {
-                    sentence: "せんせい _____ がっこうに います。",
-                    options: ["は", "を", "が", "の"],
-                    correct: 0
-                }
-            ]
-        }
-    }
-};
+const quizTemplates = dataQuizTemplates;
 
 // Component chính
 export default function JapaneseQuizApp() {
@@ -205,12 +73,21 @@ export default function JapaneseQuizApp() {
 
         // Chấm bài 2
         const ex2Answers = answers.exercise2 || [];
-        exerciseResults.exercise2 = ex2Answers.map((pair, i) => ({
+        exerciseResults.exercise2 = ex2Answers.map((pair, i) => {
+            let correct = -1;
+            for (let j = 0; j < quiz.exercises.exercise2.correct.length; j++) {
+                if(pair.a == quiz.exercises.exercise2.correct[j][0]){
+                    correct = quiz.exercises.exercise2.correct[j][1];
+                }
+            }
+            return {
             columnA: quiz.exercises.exercise2.columnA[pair.a]?.text,
             columnB: quiz.exercises.exercise2.columnB[pair.b]?.text,
-            isCorrect: pair.a === pair.b,
-            explanation: pair.a === pair.b ? "Ghép đúng!" : "Ghép chưa đúng"
-        }));
+            isCorrect: correct === pair.b,
+            explanation: quiz.exercises.exercise2.columnA[pair.a]?.text + "→" + quiz.exercises.exercise2.columnB[correct]?.text
+        }});
+        console.log(exerciseResults.exercise2);
+        console.log(ex2Answers);
         totalCorrect += exerciseResults.exercise2.filter(r => r.isCorrect).length;
         totalQuestions += ex2Answers.length;
 
@@ -307,7 +184,7 @@ export default function JapaneseQuizApp() {
     if (screen === 'name') {
         return (
             <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 p-8">
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-2xl mx-auto my-20">
                     <div className="bg-white rounded-3xl shadow-2xl p-8 mb-6 border-4 border-yellow-300">
                         <h1 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
                             Kiểm tra Tiếng Nhật
@@ -348,19 +225,7 @@ export default function JapaneseQuizApp() {
                                     <select
                                         value={selectedKey}
                                         onChange={(e) => setSelectedKey(e.target.value)}
-                                        className="w-full
-            bg-gradient-to-r from-yellow-300 to-orange-300
-            text-purple-800
-            font-bold
-            text-2xl
-            py-6
-            px-6
-            rounded-2xl
-            shadow-lg
-            border-4 border-orange-400
-            focus:outline-none focus:ring-4 focus:ring-orange-300
-            cursor-pointer
-        "
+                                        className="w-full bg-gradient-to-r from-yellow-300 to-orange-300 text-purple-800 font-bold text-2xl py-6 px-6 rounded-2xl shadow-lg border-4 border-orange-400 focus:outline-none focus:ring-4 focus:ring-orange-300 cursor-pointer"
                                     >
                                         <option
                                             value=""
@@ -398,23 +263,12 @@ export default function JapaneseQuizApp() {
                                     <button
                                         disabled={!studentName || !selectedKey}
                                         onClick={() => startQuiz(selectedKey)}
-                                        className={`
-            w-full
-            py-6
-            px-8
-            rounded-2xl
-            text-2xl
-            font-bold
-            transition
-            shadow-lg
-            border-4
-
-            ${
+                                        className={`w-full py-6 px-8 rounded-2xl text-2xl font-bold transition shadow-lg border-4
+                                        ${
                                             studentName && selectedKey
                                                 ? 'bg-gradient-to-r from-yellow-300 to-orange-300 text-purple-800 border-orange-400 hover:from-yellow-400 hover:to-orange-400 hover:scale-105'
                                                 : 'bg-gray-300 text-gray-500 border-gray-400 cursor-not-allowed'
-                                        }
-        `}
+                                        }`}
                                     >
                                         Bắt đầu làm bài
                                     </button>
@@ -855,12 +709,12 @@ function ExerciseContent({exerciseNum, quiz, answers, setAnswers}) {
     if (exerciseNum === 5) {
         return (
             <div>
-                <h3 className="text-3xl font-bold text-purple-700 mb-6">🇯🇵 Bài 5: Nhập từ vựng sang tiếng Nhật</h3>
+                <h3 className="text-3xl font-bold text-purple-700 mb-6">🇯🇵 Bài 5: Dịch sang tiếng Nhật</h3>
                 <div className="space-y-6">
                     {exerciseData.map((q, qIndex) => (
                         <div key={qIndex} className="bg-blue-50 rounded-2xl p-6 border-3 border-blue-200">
                             <p className="text-xl font-semibold mb-4 text-gray-800">
-                                Câu {qIndex + 1}: "{q.vietnamese}" → Tiếng Nhật:
+                                Câu {qIndex + 1}: "{q.vietnamese}"
                             </p>
                             <input
                                 type="text"
