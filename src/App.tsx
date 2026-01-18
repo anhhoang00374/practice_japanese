@@ -84,7 +84,7 @@ export default function JapaneseQuizApp() {
             columnA: quiz.exercises.exercise2.columnA[pair.a]?.text,
             columnB: quiz.exercises.exercise2.columnB[pair.b]?.text,
             isCorrect: correct === pair.b,
-            explanation: quiz.exercises.exercise2.columnA[pair.a]?.text + "→" + quiz.exercises.exercise2.columnB[correct]?.text
+            explanation: correct === pair.b ? "Đúng rồi!" : "Đáp án đúng là:" + quiz.exercises.exercise2.columnA[pair.a]?.text + "→" + quiz.exercises.exercise2.columnB[correct]?.text
         }});
         console.log(exerciseResults.exercise2);
         console.log(ex2Answers);
