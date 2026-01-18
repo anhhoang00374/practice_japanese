@@ -160,7 +160,7 @@ const dataQuizTemplates = {
                 {
                     words: [
                         ["は "," ?"],
-                        ["?"," か"],
+                        ["?"," ?"],
                         ["? "," わ"],
                     ],
                     correctSequence: ["はな", "なか", "かわ"]

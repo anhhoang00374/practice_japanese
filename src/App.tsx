@@ -112,20 +112,18 @@ export default function JapaneseQuizApp() {
         const ex4Answers = answers.exercise4 || [];
         const ex4Data = quiz.exercises.exercise4;
         exerciseResults.exercise4 = ex4Data.map((question, qIdx) => {
-            const userAnswerObj = ex4Answers[qIdx] || {};
-            const userWords = question.words.map((wordArray, wIdx) => {
-                return wordArray.map((char, cIdx) => {
-                    if (char === '?') {
-                        return userAnswerObj[`${wIdx}-${cIdx}`] || '';
-                    }
-                    return char;
-                }).join('');
-            });
-
-            const isCorrect = JSON.stringify(userWords) === JSON.stringify(question.correctSequence);
+            const userAnswerObj = ex4Answers[qIdx] || [];
+            console.log(userAnswerObj);
+            const userWords = userAnswerObj?userAnswerObj?.join(' → '):'';
+            console.log(userWords);
+            console.log("start");
+            console.log(JSON.stringify(userWords));
+            console.log("end");
+            console.log(JSON.stringify(question.correctSequence));
+            const isCorrect = JSON.stringify(userWords) === JSON.stringify(question.correctSequence.join(' → '));
             return {
                 correctSequence: question.correctSequence.join(' → '),
-                userSequence: userWords.join(' → '),
+                userSequence: userWords,
                 isCorrect,
                 explanation: isCorrect ? "Nối đúng!" : `Thứ tự đúng: ${question.correctSequence.join(' → ')}`
             };
