@@ -183,7 +183,7 @@ const dataQuizTemplates = {
             ],
             exercise5: [
                 {vietnamese: "Tôi thích bánh kem", japanese: "わたしはケーキがすきです"},
-                {vietnamese: "Tôi thức dậy vào lúc 5h30", japanese: "わたしはごじはんにおきます"},
+                {vietnamese: "Tôi thức dậy vào lúc 5h20", japanese: "わたしはごじにじゅっぷんにおきます"},
                 {vietnamese: "Tôi ngủ lúc 10h15", japanese: "わたしはじゅうじじゅうごふんにねます"},
                 {vietnamese: "đây là kem", japanese: "これはアイスクリームです"},
                 {vietnamese: "Tôi cũng không phải người Mỹ", japanese: "わたしもアメリカじんではありません"}
