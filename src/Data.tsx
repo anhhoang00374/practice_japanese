@@ -1,4 +1,290 @@
 const dataQuizTemplates = {
+    quiz3: {
+        title: "Bài test 15",
+        description: "Các từ vựng địa điểm",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'いえ' có nghĩa là gì?",
+                    options: ["Trường học", "Nhà", "Công ty", "Bệnh viện"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'がっこう' có nghĩa là gì?",
+                    options: ["Lớp học", "Thư viện", "Trường học", "Công ty"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'きょうしつ' có nghĩa là gì?",
+                    options: ["Trường học", "Công viên", "Công ty", "Lớp học"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'としょかん' có nghĩa là gì?",
+                    options: ["Thư viện", "Nhà ga", "Siêu thị", "Nhà hàng"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'かいしゃ' có nghĩa là gì?",
+                    options: ["Bệnh viện", "Ngân hàng", "Nhà ga", "Công ty"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'びょういん' có nghĩa là gì?",
+                    options: ["Công ty", "Bệnh viện", "Ngân hàng", "Nhà hàng"],
+                    correct: 1
+                },
+                {
+                    question: 'Từ \'えき\' có nghĩa là gì?',
+                    options: ["Nhà ga", "Công viên", "Nhà hàng", "Siêu thị"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ぎんこう' có nghĩa là gì?",
+                    options: ["Siêu thị", "Nhà ga", "Ngân hàng", "Công viên"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'スーパー' có nghĩa là gì?",
+                    options: ["Nhà hàng", "Công viên", "Siêu thị", "Nhà ga"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'こうえん' có nghĩa là gì?",
+                    options: ["Siêu thị", "Nhà hàng", "Nhà ga", "Công viên"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'レストラン' có nghĩa là gì?",
+                    options: ["Công viên", "Nhà hàng", "Siêu thị", "Nhà ga"],
+                    correct: 1
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Cây'?",
+                    options: ["くさ", "かさ", "き", "こえ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Cỏ'?",
+                    options: ["き", "くさ", "かさ", "あし"],
+                    correct: 1
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Cái ô'?",
+                    options: ["こえ", "かお", "き", "かさ"],
+                    correct: 3
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Giọng nói'?",
+                    options: ["こえ", "あし", "かお", "いす"],
+                    correct: 0
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Cái chân'?",
+                    options: ["かお", "いす", "あし", "すいか"],
+                    correct: 2
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Khuôn mặt'?",
+                    options: ["あし", "かお", "うし", "しお"],
+                    correct: 1
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Cái ghế'?",
+                    options: ["すいか", "うし", "いす", "しお"],
+                    correct: 2
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Dưa hấu'?",
+                    options: ["いす", "しお", "うし", "すいか"],
+                    correct: 3
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Muối'?",
+                    options: ["しお", "すいか", "うし", "かお"],
+                    correct: 0
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Con bò'?",
+                    options: ["すいか", "うし", "しお", "いす"],
+                    correct: 1
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Thế giới'?",
+                    options: ["おかし", "あお", "あか", "せかい"],
+                    correct: 3
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Kẹo bánh'?",
+                    options: ["あお", "せかい", "おかし", "あか"],
+                    correct: 2
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Màu xanh'?",
+                    options: ["あか", "せかい", "あお", "おかし"],
+                    correct: 2
+                },
+                {
+                    question: "Từ tiếng Nhật nào có nghĩa là 'Màu đỏ'?",
+                    options: ["あお", "あか", "おかし", "せかい"],
+                    correct: 1
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "id": 1, "text": "かぞくは　なんにんですか" },
+                    { "id": 2, "text": "ここは　がっこうですか" },
+                    { "id": 3, "text": "Lanさんは　どこですか" },
+                    { "id": 4, "text": "スーパーは　どこですか" },
+                    { "id": 5, "text": "おなまえは　なんですか" },
+                    { "id": 6, "text": "おしごとは　なんですか" },
+                    { "id": 7, "text": "あなたは　なんさいですか" },
+                    { "id": 8, "text": "なんじに　ねますか" },
+                    { "id": 9, "text": "なんじに　おきますか" }
+                ],
+                "columnB": [
+                    { "id": 1, "text": "じゅうじに　ねます" },
+                    { "id": 2, "text": "いいえ、ぎんこうです" },
+                    { "id": 3, "text": "ちゅうがくせいです" },
+                    { "id": 4, "text": "じゅうにさいです" },
+                    { "id": 5, "text": "あそこです" },
+                    { "id": 6, "text": "ごじに　おきます" },
+                    { "id": 7, "text": "ぎんこうです" },
+                    { "id": 8, "text": "かぞくは　ごにんです" },
+                    { "id": 9, "text": "Lanです" }
+                ],
+                "correct": [
+                    [6, 3], [3, 4], [0, 7], [1, 1],
+                    [7, 0], [5, 2], [8, 5], [4, 8], [2, 6]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "かぞく",
+                        "すいか",
+                        "せかい"
+                    ],
+                    correctAnswer: "か",
+                    hint: "có một từ vựng liên quan tới trái cây"
+                },
+                {
+                    words: [
+                        "スーパー",
+                        "パパイヤ",
+                        "パイナップル "
+                    ],
+                    correctAnswer: "パ",
+                    hint: "Có một từ là tên một loại trái cây"
+                },
+                {
+                    words: [
+                        "こうこうせい",
+                        "ぎんこう",
+                        "たいこ"
+                    ],
+                    correctAnswer: "こ",
+                    hint: "Có một từ chỉ địa điểm"
+                },
+                {
+                    words: [
+                        "ひと",
+                        "せいと",
+                        "としょかん"
+                    ],
+                    correctAnswer: "と",
+                    hint: "Có một từ liên quan tới học sinh"
+                }
+                ,
+                {
+                    words: [
+                        "レストラン",
+                        "ラオス",
+                        "フランス"
+                    ],
+                    correctAnswer: "ス",
+                    hint: "Có một từ liên quan đến quốc gia"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["が ", " っ ", " こ"," ?"],
+                        ["? "," ?"],
+                        ["? "," ゃ"," し"," ん"]
+                    ],
+                    correctSequence: ["がっこう", "うし", "しゃしん"]
+                },
+                {
+                    words: [
+                        ["か "," ?"],
+                        ["? "," っ "," ?"],
+                        ["?"," しゅ"]
+                    ],
+                    correctSequence: ["かさ", "さっか", "かしゅ"]
+                },
+                {
+                    words: [
+                        ["きょう "," し"," ?"],
+                        ["?"," く"," "],
+                        ["? "," き"],
+                    ],
+                    correctSequence: ["きょうしつ", "つくえ", "えき"]
+                },
+                {
+                    words: [
+                        ["が ", " ?"],
+                        ["?"," ?"],
+                        ["? "," お"," い"],
+                    ],
+                    correctSequence: ["がか", "かお", "おおい"]
+                },
+                {
+                    words: [
+                        ["い ", " ?"],
+                        ["?"," い"," よ"," う"," ?"],
+                        ["? "," ょ"," う"," い"," ん"],
+                    ],
+                    correctSequence: ["いす", "すいようび", "びょういん"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Ở đây là công viên", japanese: "ここはこうえんです"},
+                {vietnamese: "Tôi thức dậy vào lúc 10h20", japanese: "わたしはじゅうじににじゅっぷんにおきます"},
+                {vietnamese: "Tôi ngủ lúc 10h15", japanese: "わたしはじゅうじじゅうごふんにねます"},
+                {vietnamese: "gia đình có 4 người", japanese: "かぞくはよにんです"},
+                {vietnamese: "lớp học có bao nhiêu người", japanese: "クラスはなんにんですか"},
+                {vietnamese: "Bạn Lan ở đâu", japanese: "Lanさんはどこですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "クラスは　_____ ですか。",
+                    options: ["なにん", "なんひと", "なにじん", "なんにん"],
+                    correct: 3
+                },
+                {
+                    sentence: "Lanさんは _____ です。",
+                    options: ["ちゅうがくせい", "さくら", "かぞく", "こうえん"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんは _____ ねますか。",
+                    options: ["なにじ", "なんようび", "どこ", "なんじ"],
+                    correct: 2
+                },
+                {
+                    sentence: "おしごとは _____ ですか。",
+                    options: ["なに", "なん", "なにじん", "なんじ"],
+                    correct: 1
+                },
+                {
+                    sentence: "Lanさんは _____ ですか。",
+                    options: ["なにじん", "なん", "にほん", "なんようび"],
+                    correct: 0
+                }
+            ]
+        }
+    },
     quiz2: {
         title: "Bài test 14",
         description: "Các từ vựng về đồ dùng học tập",
