@@ -250,7 +250,7 @@ const dataQuizTemplates = {
             ],
             exercise5: [
                 {vietnamese: "Ở đây là công viên", japanese: "ここはこうえんです"},
-                {vietnamese: "Tôi thức dậy vào lúc 10h20", japanese: "わたしはじゅうじににじゅっぷんにおきます"},
+                {vietnamese: "Tôi thức dậy vào lúc 10h20", japanese: "わたしはじゅうじにじゅっぷんにおきます"},
                 {vietnamese: "Tôi ngủ lúc 10h15", japanese: "わたしはじゅうじじゅうごふんにねます"},
                 {vietnamese: "gia đình có 4 người", japanese: "かぞくはよにんです"},
                 {vietnamese: "lớp học có bao nhiêu người", japanese: "クラスはなんにんですか"},
@@ -264,7 +264,7 @@ const dataQuizTemplates = {
                 },
                 {
                     sentence: "Lanさんは _____ です。",
-                    options: ["ちゅうがくせい", "さくら", "かぞく", "こうえん"],
+                    options: ["ちゅうがくせい", "さくら", "かぞく", "アメリカ"],
                     correct: 0
                 },
                 {
