@@ -279,7 +279,7 @@ const dataQuizTemplates = {
                 },
                 {
                     sentence: "Lanさんは _____ です。",
-                    options: ["じむいん", "さくら", "クラス", "フランス"],
+                    options: ["こうむいん", "さくら", "クラス", "フランス"],
                     correct: 0
                 },
                 {
