@@ -1,4 +1,305 @@
 const dataQuizTemplates = {
+    quiz4: {
+        title: "Bài test 16",
+        description: "Các từ vựng về đồ vật",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'かばん' có nghĩa là gì?",
+                    options: ["Cái túi, cái cặp", "Vở, tập", "Từ điển", "Cái bàn"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ノート' có nghĩa là gì?",
+                    options: ["Cái túi, cái cặp", "Vở, tập", "Bút bi", "Từ điển"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じしょ' có nghĩa là gì?",
+                    options: ["Vở, tập", "Bút bi", "Từ điển", "Cái bàn"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ペン' có nghĩa là gì?",
+                    options: ["Từ điển", "Cái bàn", "Đồng hồ", "Bút bi"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'つくえ' có nghĩa là gì?",
+                    options: ["Cái bàn", "Đồng hồ", "Tivi", "Bút bi"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'とけい' có nghĩa là gì?",
+                    options: ["Cái bàn", "Đồng hồ", "Tivi", "Điện thoại di động"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'テレビ' có nghĩa là gì?",
+                    options: ["Đồng hồ", "Điện thoại di động", "Tivi", "Máy tính xách tay"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'けいたいでんわ' có nghĩa là gì?",
+                    options: ["Tivi", "Máy tính xách tay", "Ví", "Điện thoại di động"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'パソコン' có nghĩa là gì?",
+                    options: ["Máy tính xách tay", "Ví", "Giày", "Điện thoại di động"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'さいふ' có nghĩa là gì?",
+                    options: ["Máy tính xách tay", "Ví", "Giày", "Mũ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'くつ' có nghĩa là gì?",
+                    options: ["Ví", "Mũ", "Giày", "Cái túi, cái cặp"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ぼうし' có nghĩa là gì?",
+                    options: ["Giày", "Vở, tập", "Ví", "Mũ"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'くち' có nghĩa là gì?",
+                    options: ["Miệng", "Răng", "Tay", "Con chó"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'は' có nghĩa là gì?",
+                    options: ["Miệng", "Răng", "Tay", "Cái trống"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'て' có nghĩa là gì?",
+                    options: ["Răng", "Cái trống", "Tay", "Mặt trăng"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'たいこ' có nghĩa là gì?",
+                    options: ["Tay", "Mặt trăng", "Ngôi sao", "Cái trống"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'つき' có nghĩa là gì?",
+                    options: ["Mặt trăng", "Ngôi sao", "Bên ngoài", "Cái trống"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ほし' có nghĩa là gì?",
+                    options: ["Mặt trăng", "Ngôi sao", "Bên ngoài", "Bên trong"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'そと' có nghĩa là gì?",
+                    options: ["Ngôi sao", "Bên trong", "Bên ngoài", "Thịt"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'なか' có nghĩa là gì?",
+                    options: ["Bên ngoài", "Thịt", "Con chó", "Bên trong"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'にく' có nghĩa là gì?",
+                    options: ["Thịt", "Con chó", "Con mèo", "Bên trong"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'いぬ' có nghĩa là gì?",
+                    options: ["Thịt", "Con chó", "Con mèo", "Con người"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ねこ' có nghĩa là gì?",
+                    options: ["Con chó", "Con người", "Con mèo", "Vải"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ひと' có nghĩa là gì?",
+                    options: ["Con mèo", "Vải", "Hoa", "Con người"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'ぬの' có nghĩa là gì?",
+                    options: ["Vải", "Hoa", "Cái bàn", "Con người"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'はな' có nghĩa là gì?",
+                    options: ["Vải", "Hoa", "Cái bàn", "Cái thuyền"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'つくえ' có nghĩa là gì?",
+                    options: ["Hoa", "Cái thuyền", "Cái bàn", "Vải"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ふね' có nghĩa là gì?",
+                    options: ["Cái bàn", "Hoa", "Vải", "Cái thuyền"],
+                    correct: 3
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "かぞくは　なんにんですか" },
+                    { "text": "ここは　がっこうですか" },
+                    { "text": "Lanさんは　どこですか" },
+                    { "text": "あのぼうしは　いくらですか" },
+                    { "text": "そのテレビは　いくらですか" },
+                    { "text": "おしごとは　なんですか" },
+                    { "text": "あなたは　なんさいですか" },
+                    { "text": "ただいま" },
+                    { "text": "いってらっしゃい" }
+                ],
+                "columnB": [
+                    { "text": "いってきます" },
+                    { "text": "おかえりなさい" },
+                    { "text": "ちゅうがくせいです" },
+                    { "text": "いいえ、ぎんこうです" },
+                    { "text": "かぞくは　さんにんです" },
+                    { "text": "じゅうにさいです" },
+                    { "text": "ぎんこうです" },
+                    { "text": "これは　１２００００００ドンです" },
+                    { "text": "５００００ドンです" }
+                ],
+                "correct": [
+                    [0, 4], [1, 3], [2, 6], [3, 8],
+                    [4, 7], [5, 2], [6, 5], [7, 1], [8, 0]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "とけい",
+                        "かいしゃ",
+                        "いえ"
+                    ],
+                    correctAnswer: "い",
+                    hint: "có một từ vựng liên quan tới đồ vật"
+                },
+                {
+                    words: [
+                        "スーパー",
+                        "ノート",
+                        "ヨーグルト "
+                    ],
+                    correctAnswer: "ー",
+                    hint: "Có một từ là tên một loại thực phẩm"
+                },
+                {
+                    words: [
+                        "パソコン",
+                        "マンゴー",
+                        "ドリアン"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ chỉ đồ điện tử"
+                },
+                {
+                    words: [
+                        "ふね",
+                        "たいふう",
+                        "さいふ"
+                    ],
+                    correctAnswer: "ふ",
+                    hint: "Có một từ liên quan tới đồ vật"
+                }
+                ,
+                {
+                    words: [
+                        "くつ",
+                        "つくえ",
+                        "つき"
+                    ],
+                    correctAnswer: "つ",
+                    hint: "Có một từ liên quan tới đồ dùng cá nhân"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["が ", " っ ", " こ"," ?"],
+                        ["? "," ?"],
+                        ["? "," ゃ"," し"," ん"]
+                    ],
+                    correctSequence: ["がっこう", "うし", "しゃしん"]
+                },
+                {
+                    words: [
+                        ["か "," ?"],
+                        ["? "," っ "," ?"],
+                        ["?"," しゅ"]
+                    ],
+                    correctSequence: ["かさ", "さっか", "かしゅ"]
+                },
+                {
+                    words: [
+                        ["きょう "," し"," ?"],
+                        ["?"," く"," "],
+                        ["? "," き"],
+                    ],
+                    correctSequence: ["きょうしつ", "つくえ", "えき"]
+                },
+                {
+                    words: [
+                        ["が ", " ?"],
+                        ["?"," ?"],
+                        ["? "," お"," い"],
+                    ],
+                    correctSequence: ["がか", "かお", "おおい"]
+                },
+                {
+                    words: [
+                        ["い ", " ?"],
+                        ["?"," い"," よ"," う"," ?"],
+                        ["? "," ょ"," う"," い"," ん"],
+                    ],
+                    correctSequence: ["いす", "すいようび", "びょういん"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
+                {vietnamese: "Tôi thức dậy vào lúc 5h30", japanese: "わたしはごじはんにおきます"},
+                {vietnamese: "cái điện thoại di động này giá 3230000 đồng", japanese: "このけいたいでんわはさんびゃくにじゅうさんまんドンです"},
+                {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
+                {vietnamese: "Cái đồng hồ này giá bao nhiều tiền", japanese: "このとけいはいくらですか"},
+                {vietnamese: "Bạn Lan ở đâu", japanese: "Lanさんはどこですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "このくつは　_____ ですか。",
+                    options: ["なにん", "なんようび", "なにじん", "いくら"],
+                    correct: 3
+                },
+                {
+                    sentence: "Lanさんは _____ です。",
+                    options: ["じむいん", "さくら", "クラス", "フランス"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんは _____ ですか。",
+                    options: ["なにじ", "なんようび", "どこ", "なんじ"],
+                    correct: 2
+                },
+                {
+                    sentence: "クラス _____ ですか。",
+                    options: ["なに", "なんにん", "なにじん", "なんじ"],
+                    correct: 1
+                },
+                {
+                    sentence: "Lanさんは _____ ですか。",
+                    options: ["なにじん", "なん", "にほん", "なんようび"],
+                    correct: 0
+                }
+            ]
+        }
+    },
     quiz3: {
         title: "Bài test 15",
         description: "Các từ vựng địa điểm",
@@ -132,26 +433,26 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "id": 1, "text": "かぞくは　なんにんですか" },
-                    { "id": 2, "text": "ここは　がっこうですか" },
-                    { "id": 3, "text": "Lanさんは　どこですか" },
-                    { "id": 4, "text": "スーパーは　どこですか" },
-                    { "id": 5, "text": "おなまえは　なんですか" },
-                    { "id": 6, "text": "おしごとは　なんですか" },
-                    { "id": 7, "text": "あなたは　なんさいですか" },
-                    { "id": 8, "text": "なんじに　ねますか" },
-                    { "id": 9, "text": "なんじに　おきますか" }
+                    { "text": "かぞくは　なんにんですか" },
+                    { "text": "ここは　がっこうですか" },
+                    { "text": "Lanさんは　どこですか" },
+                    { "text": "スーパーは　どこですか" },
+                    { "text": "おなまえは　なんですか" },
+                    { "text": "おしごとは　なんですか" },
+                    { "text": "あなたは　なんさいですか" },
+                    { "text": "なんじに　ねますか" },
+                    { "text": "なんじに　おきますか" }
                 ],
                 "columnB": [
-                    { "id": 1, "text": "じゅうじに　ねます" },
-                    { "id": 2, "text": "いいえ、ぎんこうです" },
-                    { "id": 3, "text": "ちゅうがくせいです" },
-                    { "id": 4, "text": "じゅうにさいです" },
-                    { "id": 5, "text": "あそこです" },
-                    { "id": 6, "text": "ごじに　おきます" },
-                    { "id": 7, "text": "ぎんこうです" },
-                    { "id": 8, "text": "かぞくは　ごにんです" },
-                    { "id": 9, "text": "Lanです" }
+                    { "text": "じゅうじに　ねます" },
+                    { "text": "いいえ、ぎんこうです" },
+                    { "text": "ちゅうがくせいです" },
+                    { "text": "じゅうにさいです" },
+                    { "text": "あそこです" },
+                    { "text": "ごじに　おきます" },
+                    { "text": "ぎんこうです" },
+                    { "text": "かぞくは　ごにんです" },
+                    { "text": "Lanです" }
                 ],
                 "correct": [
                     [6, 3], [3, 4], [0, 7], [1, 1],
@@ -269,8 +570,8 @@ const dataQuizTemplates = {
                 },
                 {
                     sentence: "Lanさんは _____ ねますか。",
-                    options: ["なにじ", "なんようび", "どこ", "なんじ"],
-                    correct: 2
+                    options: ["なんじ", "なんようび", "どこ", "なんじ"],
+                    correct: 0
                 },
                 {
                     sentence: "おしごとは _____ ですか。",
