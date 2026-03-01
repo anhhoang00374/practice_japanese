@@ -279,9 +279,9 @@ const dataQuizTemplates = {
             exercise5: [
                 {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
                 {vietnamese: "Tôi đi ngủ vào lúc 9h30", japanese: "わたしはくじはんにねます"},
-                {vietnamese: "cái điện thoại di động này giá bao nhiêu", japanese: ""},
+                {vietnamese: "cái điện thoại di động này giá bao nhiêu", japanese: "このけいたいでんわはいくらですか"},
                 {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
-                {vietnamese: "đây là cái mũ của bạn có đúng không", japanese: ""},
+                {vietnamese: "đây là cái mũ của bạn có đúng không", japanese: "これはあなたのぼうしですか"},
                 {vietnamese: "quyển sách này là của bạn đúng không", japanese: "このほんはあなたのですか"},
             ],
             exercise6: [
