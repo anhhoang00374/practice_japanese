@@ -1,4 +1,318 @@
 const dataQuizTemplates = {
+    quiz5: {
+        title: "Bài test 17",
+        description: "Hỏi về người",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'はさみ' có nghĩa là gì?",
+                    options: ["Keo dán", "Kéo", "Thước", "Hộp bút"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'けしゴム' có nghĩa là gì?",
+                    options: ["Bút bi", "Bút xóa", "Cục tẩy", "Bút chì kim"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'しゅうせいえき' có nghĩa là gì?",
+                    options: ["Cục tẩy", "Bút chì kim", "Bút bi", "Bút xóa"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'カレンダー' có nghĩa là gì?",
+                    options: ["Lịch", "Bản đồ", "Vở", "Hộp bút"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ボールペン' có nghĩa là gì?",
+                    options: ["Bút chì kim", "Keo dán", "Bút bi", "Thước"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'シャープペンシル' có nghĩa là gì?",
+                    options: ["Bút xóa", "Bút chì kim", "Bút bi", "Cục tẩy"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'のり' có nghĩa là gì?",
+                    options: ["Thước", "Vở", "Bản đồ", "Keo dán"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'ちず' có nghĩa là gì?",
+                    options: ["Vở", "Bản đồ", "Lịch", "Hộp bút"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ノート' có nghĩa là gì?",
+                    options: ["Hộp bút", "Thước", "Kéo", "Vở"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'ペンケース' có nghĩa là gì?",
+                    options: ["Hộp bút", "Vở", "Bản đồ", "Lịch"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'じょうぎ' có nghĩa là gì?",
+                    options: ["Kéo", "Keo dán", "Thước", "Hộp bút"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'スポーツ' có nghĩa là gì?",
+                    options: ["Động vật", "Thể thao", "Món ăn", "Bản đồ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'どうぶつ' có nghĩa là gì?",
+                    options: ["Thể thao", "Món ăn", "Lịch", "Động vật"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'りょうり' có nghĩa là gì?",
+                    options: ["Món ăn, thức ăn", "Động vật", "Thể thao", "Vở"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'bia' trong tiếng Nhật là gì?",
+                    options: ["コーラ", "ビール", "コーヒー", "ヨーグルト"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'coca cola' trong tiếng Nhật là gì?",
+                    options: ["コーラ", "ビール", "アイスクリーム", "コーヒー"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'bánh mì' trong tiếng Nhật là gì?",
+                    options: ["ケーキ", "サラダ", "パン", "コーヒー"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'salad' trong tiếng Nhật là gì?",
+                    options: ["パン", "ケーキ", "ヨーグルト", "サラダ"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'bánh kem' trong tiếng Nhật là gì?",
+                    options: ["アイスクリーム", "ケーキ", "サラダ", "パン"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'cà phê' trong tiếng Nhật là gì?",
+                    options: ["ヨーグルト", "ビール", "コーラ", "コーヒー"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'sữa chua' trong tiếng Nhật là gì?",
+                    options: ["ヨーグルト", "アイスクリーム", "コーヒー", "ケーキ"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'kem' trong tiếng Nhật là gì?",
+                    options: ["バナナ", "ヨーグルト", "アイスクリーム", "パパイヤ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'đu đủ' trong tiếng Nhật là gì?",
+                    options: ["マンゴー", "バナナ", "ココナッツ", "パパイヤ"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'chuối' trong tiếng Nhật là gì?",
+                    options: ["パパイヤ", "バナナ", "パイナップル", "マンゴー"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'dừa' trong tiếng Nhật là gì?",
+                    options: ["ドリアン", "マンゴスチン", "ココナッツ", "バナナ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'dứa' trong tiếng Nhật là gì?",
+                    options: ["パイナップル", "ココナッツ", "マンゴー", "パパイヤ"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'xoài' trong tiếng Nhật là gì?",
+                    options: ["ドリアン", "パイナップル", "マンゴスチン", "マンゴー"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'măng cụt' trong tiếng Nhật là gì?",
+                    options: ["マンゴー", "マンゴスチン", "ドリアン", "ココナッツ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'sầu riêng' trong tiếng Nhật là gì?",
+                    options: ["マンゴスチン", "パイナップル", "ドリアン", "マンゴー"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'Việt Nam' trong tiếng Nhật là gì?",
+                    options: ["ちゅうごく", "ベトナム", "マンゴスチン", "ドリアン"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'Trung Quốc' trong tiếng Nhật là gì?",
+                    options: ["ベトナム", "コーラ", "ビール", "ちゅうごく"],
+                    correct: 3
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "あなたのかばんはいくらですか" },
+                    { "text": "このほんはLinhさんのですか" },
+                    { "text": "かぞくはなんにんですか" },
+                    { "text": "このひとはだれですか" },
+                    { "text": "あのひとはなにじんですか" },
+                    { "text": "これはあなたのじょうぎですか" }
+                ],
+                "columnB": [
+                    { "text": "はい、わたしのです" },
+                    { "text": "にほんじんですか" },
+                    { "text": "このひとはたなかさんです" },
+                    { "text": "いいえ、わたしのです。" },
+                    { "text": "1200000ドンです" },
+                    { "text": "よにんです" }
+                ],
+                "correct": [
+                    [0, 4],
+                    [1, 3],
+                    [2, 5],
+                    [3, 2],
+                    [4, 1],
+                    [5, 0]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "はさみ",
+                        "みみ",
+                        "うみ"
+                    ],
+                    correctAnswer: "み",
+                    hint: "co có một từ vựng liên quan tới cơ thể con người"
+                },
+                {
+                    words: [
+                        "けしゴム",
+                        "しごと",
+                        "ざっし"
+                    ],
+                    correctAnswer: "し",
+                    hint: "Có một từ vựng liên quan tới công việc"
+                },
+                {
+                    words: [
+                        "どうぶつ",
+                        "つくえ",
+                        "つき"
+                    ],
+                    correctAnswer: "つ",
+                    hint: "Có một từ vựng liên quan tới thiên nhiên"
+                },
+                {
+                    words: [
+                        "ペンケース",
+                        "ボールペン",
+                        "カレンダー"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ chỉ đồ dùng học tập"
+                }
+                ,
+                {
+                    words: [
+                        "りょうり",
+                        "くすりや",
+                        "のり"
+                    ],
+                    correctAnswer: "り",
+                    hint: "Có một từ vựng liên quan tới thực phẩm"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["か "," ?"],
+                        ["? ","た "," ?"],
+                        ["? "," ろ"]
+                    ],
+                    correctSequence: ["かわ", "わたし", "しろ"]
+                },
+                {
+                    words: [
+                        ["や "," ?"],
+                        ["? "," ?"],
+                        ["?"," ず"]
+                    ],
+                    correctSequence: ["やま", "まち", "ちず"]
+                },
+                {
+                    words: [
+                        ["に "," ?"],
+                        ["?"," ?"],
+                        ["? "," く"," え"],
+                    ],
+                    correctSequence: ["にく", "くつ", "つくえ"]
+                },
+                {
+                    words: [
+                        ["が ", " ?"],
+                        ["?"," ?"],
+                        ["? "," お"," い"],
+                    ],
+                    correctSequence: ["がか", "かお", "おおい"]
+                },
+                {
+                    words: [
+                        ["は ", " ?"],
+                        ["?"," ?"],
+                        ["? "," ぜ"],
+                    ],
+                    correctSequence: ["はな", "なか", "かぜ"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
+                {vietnamese: "Tôi đi ngủ vào lúc 9h30", japanese: "わたしはくじはんにねます"},
+                {vietnamese: "cái điện thoại di động này giá bao nhiêu", japanese: ""},
+                {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
+                {vietnamese: "đây là cái mũ của bạn có đúng không", japanese: ""},
+                {vietnamese: "quyển sách này là của bạn đúng không", japanese: "このほんはあなたのですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "このひとは　_____ ですか。",
+                    options: ["なにん", "なんようび", "なにじん", "だれ"],
+                    correct: 3
+                },
+                {
+                    sentence: "これは Lanさん_____くつ です。",
+                    options: ["の", "に", "いくら", "で"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんは _____ ですか。",
+                    options: ["なにじ", "なんようび", "どこ", "なんじ"],
+                    correct: 2
+                },
+                {
+                    sentence: "クラス _____ ですか。",
+                    options: ["なに", "なんにん", "なにじん", "なんじ"],
+                    correct: 1
+                },
+                {
+                    sentence: "Minhさんは _____ ですか。",
+                    options: ["なにじん", "なん", "にほん", "なんようび"],
+                    correct: 0
+                }
+            ]
+        }
+    },
     quiz4: {
         title: "Bài test 16",
         description: "Các từ vựng về đồ vật",
