@@ -1,4 +1,213 @@
 const dataQuizTemplates = {
+    quiz6: {
+        title: "Bài test 18",
+        description: "Hỏi về người",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'あさ' có nghĩa là gì?",
+                    options: ["Buổi trưa", "Buổi sáng", "Cuối tuần", "Mỗi tối"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ひる' có nghĩa là gì?",
+                    options: ["Buổi sáng", "Mỗi ngày", "Buổi trưa", "Buổi tối"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'よる' có nghĩa là gì?",
+                    options: ["Buổi tối", "Buổi sáng", "Mỗi sáng", "Cuối tuần"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'しゅうまつ' có nghĩa là gì?",
+                    options: ["Mỗi ngày", "Buổi trưa", "Mỗi tối", "Cuối tuần"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'まいにち' có nghĩa là gì?",
+                    options: ["Mỗi sáng", "Mỗi ngày", "Cuối tuần", "Buổi tối"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'まいばん' có nghĩa là gì?",
+                    options: ["Buổi sáng", "Mỗi ngày", "Cuối tuần", "Mỗi tối"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'まいあさ' có nghĩa là gì?",
+                    options: ["Mỗi tối", "Cuối tuần", "Mỗi sáng", "Buổi trưa"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '一' có nghĩa là gì?",
+                    options: ["Nhị", "Tam", "Nhất", "Tứ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '二' có nghĩa là gì?",
+                    options: ["Nhị", "Tứ", "Tam", "Nhất"],
+                    correct: 0
+                },
+                {
+                    question: "Từ '三' có nghĩa là gì?",
+                    options: ["Nhất", "Tứ", "Nhị", "Tam"],
+                    correct: 3
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "これはあなたのじょうぎですか" },
+                    { "text": "それはだれのけしゴムですか" },
+                    { "text": "そのぺんはだれのですか" },
+                    { "text": "あなたのぼうしはいくらですか" },
+                    { "text": "Lanさんのべんはこれですか" },
+                    { "text": "かぞくはなんにんですか" }
+                ],
+                "columnB": [
+                    { "text": "よにんです" },
+                    { "text": "わたしのです。" },
+                    { "text": "123450ドンです" },
+                    { "text": "いいえ、それです" },
+                    { "text": "わたしのけしゴムですか" },
+                    { "text": "はい、わたしのです" }
+                ],
+                "correct": [
+                    [0, 5],
+                    [1, 4],
+                    [2, 1],
+                    [3, 2],
+                    [4, 3],
+                    [5, 0]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "まいあさ",
+                        "いす",
+                        "いえ"
+                    ],
+                    correctAnswer: "い",
+                    hint: "Có một từ vựng liên quan tới nhà cửa, đồ vật trong nhà"
+                },
+                {
+                    words: [
+                        "しゅうまつ",
+                        "うま",
+                        "まど"
+                    ],
+                    correctAnswer: "ま",
+                    hint: "Có một từ vựng liên quan tới thời gian"
+                },
+                {
+                    words: [
+                        "よる",
+                        "さる",
+                        "ひる"
+                    ],
+                    correctAnswer: "る",
+                    hint: "Có một từ vựng liên quan tới thời gian trong ngày"
+                },
+                {
+                    words: [
+                        "ペンケース",
+                        "ボールペン",
+                        "カレンダー"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ chỉ đồ dùng học tập"
+                }
+                ,
+                {
+                    words: [
+                        "かぞく",
+                        "つくえ",
+                        "くつ"
+                    ],
+                    correctAnswer: "く",
+                    hint: "Có một từ vựng liên quan tới gia đình"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["も "," ?"],
+                        ["? ","く "," よう"," ?"],
+                        ["? "," ょういん"]
+                    ],
+                    correctSequence: ["もも", "もくようび", "びょういん"]
+                },
+                {
+                    words: [
+                        ["や "," ?"],
+                        ["? "," ?"],
+                        ["?"," ようび"]
+                    ],
+                    correctSequence: ["やま", "まど", "どようび"]
+                },
+                {
+                    words: [
+                        ["く "," ?"],
+                        ["?","ゅうご"," ?"],
+                        ["? "," だもの"],
+                    ],
+                    correctSequence: ["くち", "ちゅうごく", "くだもの"]
+                },
+                {
+                    words: [
+                        ["ふ ", " ?"],
+                        ["?"," ?"],
+                        ["? "," おり"],
+                    ],
+                    correctSequence: ["ふね", "ねこ", "こおり"]
+                },
+                {
+                    words: [
+                        ["そ ", " ?"],
+                        ["?","け"," ?"],
+                        ["? "," しゃ"],
+                    ],
+                    correctSequence: ["そと", "とけい", "いしゃ"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Đây là cái hộp bút của ai", japanese:"これはだれのペンケースですか"},
+                {vietnamese: "Đây là cái kéo của bạn phải không", japanese: "これはあなたのはさみですか"},
+                {vietnamese: "Quyển sách của bạn giá bao nhiêu tiền", japanese: "あなたのほんはいくらですか"},
+                {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
+                {vietnamese: "Gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
+                {vietnamese: "quyển sách này là của bạn đúng không", japanese: "このほんはあなたのですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "このひとは　_____ ですか。",
+                    options: ["なにん", "なんようび", "なにじ", "だれ"],
+                    correct: 3
+                },
+                {
+                    sentence: "これは _____のくつ です。",
+                    options: ["だれ", "どれ", "いくら", "で"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんのほんは _____ ですか。",
+                    options: ["なにじ", "なんようび", "いくら", "なんじ"],
+                    correct: 2
+                },
+                {
+                    sentence: "そのペンは Minhさん_____ ですか。",
+                    options: ["と", "の", "なにじん", "なんじ"],
+                    correct: 1
+                },
+                {
+                    sentence: "Minhさんは _____ ですか。",
+                    options: ["なにじん", "なん", "にほん", "なんようび"],
+                    correct: 0
+                }
+            ]
+        }
+    },
     quiz5: {
         title: "Bài test 17",
         description: "Hỏi về người",
@@ -279,9 +488,9 @@ const dataQuizTemplates = {
             exercise5: [
                 {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
                 {vietnamese: "Tôi đi ngủ vào lúc 9h30", japanese: "わたしはくじはんにねます"},
-                {vietnamese: "cái điện thoại di động này giá bao nhiêu", japanese: "このけいたいでんわはいくらですか"},
+                {vietnamese: "cái điện thoại di động này giá bao nhiêu", japanese: ""},
                 {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
-                {vietnamese: "đây là cái mũ của bạn có đúng không", japanese: "これはあなたのぼうしですか"},
+                {vietnamese: "đây là cái mũ của bạn có đúng không", japanese: ""},
                 {vietnamese: "quyển sách này là của bạn đúng không", japanese: "このほんはあなたのですか"},
             ],
             exercise6: [
