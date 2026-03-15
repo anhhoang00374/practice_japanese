@@ -1,6 +1,6 @@
 const dataQuizTemplates = {
     quiz7: {
-        title: "Bài test 18",
+        title: "Bài test 19",
         description: "Hỏi về thời gian trong năm",
         exercises: {
             exercise1: [
