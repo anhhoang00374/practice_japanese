@@ -1,4 +1,308 @@
 const dataQuizTemplates = {
+    quiz7: {
+        title: "Bài test 18",
+        description: "Hỏi về thời gian trong năm",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'はる' có nghĩa là gì?",
+                    options: ["Mùa Hạ", "Mùa Xuân", "Mùa Thu", "Mùa Đông"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'なつ' có nghĩa là gì?",
+                    options: ["Mùa Xuân", "Mùa Đông", "Mùa Thu", "Mùa Hạ"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'あき' có nghĩa là gì?",
+                    options: ["Mùa Thu", "Mùa Xuân", "Mùa Hạ", "Sinh nhật"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ふゆ' có nghĩa là gì?",
+                    options: ["Mùa Hạ", "Sinh nhật", "Mùa Đông", "Mùa Xuân"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'たんじょうび' có nghĩa là gì?",
+                    options: ["Mùa Thu", "Mùa Đông", "Mùa Xuân", "Sinh nhật"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'いちがつ' có nghĩa là gì?",
+                    options: ["Tháng 3", "Tháng 2", "Tháng 1", "Tháng 4"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にがつ' có nghĩa là gì?",
+                    options: ["Tháng 2", "Tháng 5", "Tháng 3", "Tháng 1"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'さんがつ' có nghĩa là gì?",
+                    options: ["Tháng 1", "Tháng 4", "Tháng 2", "Tháng 3"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'しがつ' có nghĩa là gì?",
+                    options: ["Tháng 6", "Tháng 4", "Tháng 5", "Tháng 3"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ごがつ' có nghĩa là gì?",
+                    options: ["Tháng 5", "Tháng 7", "Tháng 4", "Tháng 6"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ろくがつ' có nghĩa là gì?",
+                    options: ["Tháng 5", "Tháng 7", "Tháng 8", "Tháng 6"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'しちがつ' có nghĩa là gì?",
+                    options: ["Tháng 8", "Tháng 7", "Tháng 6", "Tháng 9"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'はちがつ' có nghĩa là gì?",
+                    options: ["Tháng 7", "Tháng 9", "Tháng 8", "Tháng 6"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'くがつ' có nghĩa là gì?",
+                    options: ["Tháng 10", "Tháng 8", "Tháng 11", "Tháng 9"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'じゅうがつ' có nghĩa là gì?",
+                    options: ["Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅういちがつ' có nghĩa là gì?",
+                    options: ["Tháng 12", "Tháng 10", "Tháng 11", "Tháng 9"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'じゅうにがつ' có nghĩa là gì?",
+                    options: ["Tháng 11", "Tháng 12", "Tháng 10", "Tháng 9"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '一' có nghĩa là gì?",
+                    options: ["Nhị", "Tam", "Nhất", "Tứ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '二' có nghĩa là gì?",
+                    options: ["Nhị", "Nhất", "Tam", "Ngũ"],
+                    correct: 0
+                },
+                {
+                    question: "Từ '三' có nghĩa là gì?",
+                    options: ["Nhất", "Tứ", "Lục", "Tam"],
+                    correct: 3
+                },
+                {
+                    question: "Từ '四' có nghĩa là gì?",
+                    options: ["Tam", "Tứ", "Nhị", "Ngũ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '五' có nghĩa là gì?",
+                    options: ["Lục", "Tứ", "Ngũ", "Nhất"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '六' có nghĩa là gì?",
+                    options: ["Ngũ", "Tam", "Nhị", "Lục"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'チョコレート' có nghĩa là gì?",
+                    options: ["Nước hoa quả", "Socola", "Bữa tiệc", "Quán giải khát"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'パーティー' có nghĩa là gì?",
+                    options: ["Bữa tiệc", "Socola", "Phở", "Bánh mì"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'カフェ' có nghĩa là gì?",
+                    options: ["Bữa tiệc", "Phở", "Nước hoa quả", "Quán giải khát"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'ジュース' có nghĩa là gì?",
+                    options: ["Quán giải khát", "Nước hoa quả", "Socola", "Phở"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'フォー' có nghĩa là gì?",
+                    options: ["Bánh mì", "Quán giải khát", "Phở", "Bữa tiệc"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'バインチュン' có nghĩa là gì?",
+                    options: ["Socola", "Bánh mì", "Nước hoa quả", "Phở"],
+                    correct: 1
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "あのひとはなにじんですか" },
+                    { "text": "これはなんのほんですか" },
+                    { "text": "Lanさんもじゅうにさいですか" },
+                    { "text": "かぞくはなんにんですか" },
+                    { "text": "Minhさんのほんはどれですか" },
+                    { "text": "これはだれのほんですか" }
+                ],
+                "columnB": [
+                    { "text": "Lanさんのほんです" },
+                    { "text": "はい、そうです" },
+                    { "text": "あれです" },
+                    { "text": "ちゅうごくじんです" },
+                    { "text": "よにんです" },
+                    { "text": "スポーツのほんです" }
+                ],
+                "correct": [
+                    [0, 3],
+                    [1, 5],
+                    [2, 1],
+                    [3, 4],
+                    [4, 2],
+                    [5, 0]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "しがつ",
+                        "むし",
+                        "わたし"
+                    ],
+                    correctAnswer: "し",
+                    hint: "Có một từ vựng liên quan tới thời gian"
+                },
+                {
+                    words: [
+                        "つき",
+                        "なつ",
+                        "しちがつ"
+                    ],
+                    correctAnswer: "つ",
+                    hint: "Có một từ vựng liên quan tới thời gian trong năm"
+                },
+                {
+                    words: [
+                        "うし",
+                        "じゅうがつ",
+                        "たんじょうび"
+                    ],
+                    correctAnswer: "う",
+                    hint: "Có một từ vựng liên quan tới động vật"
+                },
+                {
+                    words: [
+                        "いちがつ",
+                        "すいか",
+                        "せかい"
+                    ],
+                    correctAnswer: "い",
+                    hint: "Có một từ vựng liên quan tới thời gian trong năm"
+                }
+                ,
+                {
+                    words: [
+                        "ごがつ",
+                        "さんがつ",
+                        "じゅうにがつ"
+                    ],
+                    correctAnswer: "Code Review",
+                    hint: "Có một từ vựng liên quan tới thời gian trong năm"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["ふ "," ?"],
+                        ["? "," ?"],
+                        ["? ","のう"]
+                    ],
+                    correctSequence: ["ふゆ", "ゆき", "きのう"]
+                },
+                {
+                    words: [
+                        ["いちが "," ?"],
+                        ["? ","く"," ?"],
+                        ["?"," き"]
+                    ],
+                    correctSequence: ["いちがつ", "つくえ", "えき"]
+                },
+                {
+                    words: [
+                        ["ぶ "," ?"],
+                        ["?","んじょう"," ?"],
+                        ["? "," ょういん"],
+                    ],
+                    correctSequence: ["ぶた", "たんじょうび", "びょういん"]
+                },
+                {
+                    words: [
+                        ["な ", " ?"],
+                        ["?"," ?"],
+                        ["? "," ょう"],
+                    ],
+                    correctSequence: ["なつ", "つき", "きょう"]
+                },
+                {
+                    words: [
+                        ["ちゅうがっこ ", " ?"],
+                        ["?"," ?"],
+                        ["? "," ちがつ"],
+                    ],
+                    correctSequence: ["ちゅうがっこう", "うし", "しちがつ"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Đây là sách của ai", japanese:"これはだれのほんですか"},
+                {vietnamese: "Đây là sách về chủ đề gì", japanese: "これはなんのほんですか"},
+                {vietnamese: "Quyển sách của Minh là quyển nào", japanese: "Minhさんのほんはどれですか"},
+                {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
+                {vietnamese: "Gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
+                {vietnamese: "quyển sách này là của bạn đúng không", japanese: "このほんはあなたのですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "あなたのかばんは _____ ですか。",
+                    options: ["どれ", "だれ", "なんさい", "なんようび"],
+                    correct: 0
+                },
+                {
+                    sentence: "それは _____ ほん ですか。",
+                    options: ["どれ", "なんの", "なにじん", "おいくつ"],
+                    correct: 1
+                },
+                {
+                    sentence: "きょうは _____ ですか。",
+                    options: ["だれ", "どこ", "なんようび", "なんさい"],
+                    correct: 2
+                },
+                {
+                    sentence: "Minhさんは _____ ですか。",
+                    options: ["なにじん", "どれ", "なんの", "いくら"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんは_____ すきですか。",
+                    options: ["だれが", "なにが", "どれが", "なんの"],
+                    correct: 1
+                }
+            ]
+        }
+    },
     quiz6: {
         title: "Bài test 18",
         description: "Hỏi về người",
