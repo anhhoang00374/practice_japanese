@@ -76,7 +76,7 @@ const dataQuizTemplates = {
                 },
                 {
                     question: "Từ 'バインチュン' có nghĩa là gì?",
-                    options: ["Socola", "Bánh mì", "Nước hoa quả", "Phở"],
+                    options: ["Socola", "Bánh chưng", "Nước hoa quả", "Phở"],
                     correct: 1
                 },
                 {
@@ -222,7 +222,7 @@ const dataQuizTemplates = {
                         "さんがつ",
                         "じゅうにがつ"
                     ],
-                    correctAnswer: "がつ",
+                    correctAnswer: "が",
                     hint: "Có một từ vựng liên quan tới thời gian trong năm"
                 }
             ],
