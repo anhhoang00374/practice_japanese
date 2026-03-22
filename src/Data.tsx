@@ -145,14 +145,20 @@ const dataQuizTemplates = {
                     correct: 3
                 },
                 {
+                    question: "Từ 'かようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "thứ ba", "thứ hai"],
+                    correct: 2
+                },
+                {
                     question: "Từ 'げつようび' có nghĩa là gì?",
                     options: ["thứ ba", "thứ hai", "thứ tư", "chủ nhật"],
                     correct: 1
                 },
+
                 {
-                    question: "Từ 'かようび' có nghĩa là gì?",
-                    options: ["thứ năm", "thứ sáu", "thứ ba", "thứ hai"],
-                    correct: 2
+                    question: "Từ 'きんようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "thứ bảy", "thứ hai"],
+                    correct: 1
                 },
                 {
                     question: "Từ 'すいようび' có nghĩa là gì?",
@@ -160,19 +166,14 @@ const dataQuizTemplates = {
                     correct: 0
                 },
                 {
-                    question: "Từ 'もくようび' có nghĩa là gì?",
-                    options: ["thứ năm", "thứ sáu", "chủ nhật", "thứ tư"],
-                    correct: 0
-                },
-                {
-                    question: "Từ 'きんようび' có nghĩa là gì?",
-                    options: ["thứ năm", "thứ sáu", "thứ bảy", "thứ hai"],
-                    correct: 1
-                },
-                {
                     question: "Từ 'どようび' có nghĩa là gì?",
                     options: ["hôm qua", "chủ nhật", "thứ bảy", "thứ tư"],
                     correct: 2
+                },
+                {
+                    question: "Từ 'もくようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "chủ nhật", "thứ tư"],
+                    correct: 0
                 },
                 {
                     question: "Từ 'にちようび' có nghĩa là gì?",
@@ -425,7 +426,7 @@ const dataQuizTemplates = {
                 },
                 {
                     words: [
-                        ["まんが "," ?"],
+                        ["まん "," ?"],
                         ["?","っ"," ?"],
                         ["? "," のう"],
                     ],
@@ -449,8 +450,8 @@ const dataQuizTemplates = {
                 }
             ],
             exercise5: [
-                {vietnamese: "Bạn có thích dứa không?", japanese:"あなたはパイナップルがすきですか"},
-                {vietnamese: "Tôi thích đủ đủ và bánh kem", japanese: "わたしはパイナップルとケーキがすきです"},
+                {vietnamese: "Bạn Minh có thích dứa không?", japanese:"Minhさんはパイナップルがすきですか"},
+                {vietnamese: "Tôi thích đủ đủ và bánh kem", japanese: "わたしはパパイヤとケーキがすきです"},
                 {vietnamese: "Bạn Minh cũng thích dừa hả", japanese: "Minhさんもココナッツがすきですか"},
                 {vietnamese: "Tôi không thích  nước coca cola", japanese: "わたしはコーラがすきではありません"},
                 {vietnamese: "Bạn Minh có thích măng cụt không", japanese: "Minhさんはマンゴスチンがすきですか"},
@@ -477,7 +478,7 @@ const dataQuizTemplates = {
                     correct: 0
                 },
                 {
-                    sentence: "Lanさんはですか。",
+                    sentence: "Lanさんは_____ですか。",
                     options: ["だれが", "なにじん", "どれが", "なんの"],
                     correct: 1
                 }
