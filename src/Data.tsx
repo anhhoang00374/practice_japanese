@@ -1,4 +1,489 @@
 const dataQuizTemplates = {
+    quiz8: {
+        title: "Bài test 20",
+        description: "Ôn tập giữa học kỳ 2",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'おかあさん' có nghĩa là gì?",
+                    options: ["bà", "chị gái", "mẹ", "bố, cha"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'おばあさん' có nghĩa là gì?",
+                    options: ["bà", "mẹ", "em gái", "anh trai"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'おにいさん' có nghĩa là gì?",
+                    options: ["em trai", "chị gái", "anh trai", "học sinh"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'たいふう' có nghĩa là gì?",
+                    options: ["quạt máy", "bão", "nước đá, đá", "cá"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'せんぷうき' có nghĩa là gì?",
+                    options: ["bão", "mũ", "xe đạp", "quạt máy"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'せんせい' có nghĩa là gì?",
+                    options: ["ca sĩ", "giáo viên, thầy/cô", "học sinh", "bệnh viện"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'せいと' có nghĩa là gì?",
+                    options: ["giáo viên, thầy/cô", "học sinh", "thư viện", "em trai"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'おねえさん' có nghĩa là gì?",
+                    options: ["bà", "em gái", "chị gái", "mẹ"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ぼうし' có nghĩa là gì?",
+                    options: ["ảnh, bức ảnh", "mũ", "trà", "búp bê"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'おとうさん' có nghĩa là gì?",
+                    options: ["mẹ", "anh trai", "bố, cha", "em trai"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'いもうと' có nghĩa là gì?",
+                    options: ["chị gái", "học sinh", "bà", "em gái"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'おとうと' có nghĩa là gì?",
+                    options: ["ca sĩ", "em trai", "anh trai", "bố, cha"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'おおい' có nghĩa là gì?",
+                    options: ["nhiều", "luyện tập", "món ăn, nấu ăn", "hôm nay"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'こおり' có nghĩa là gì?",
+                    options: ["trà", "nước đá, đá", "cá", "bão"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'さかな' có nghĩa là gì?",
+                    options: ["trâu", "món ăn, nấu ăn", "sữa bò", "cá"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'しゃしん' có nghĩa là gì?",
+                    options: ["mũ", "ảnh, bức ảnh", "sách giáo khoa", "thư viện"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'かしゅ' có nghĩa là gì?",
+                    options: ["ca sĩ", "giáo viên, thầy/cô", "học sinh", "búp bê"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'おちゃ' có nghĩa là gì?",
+                    options: ["nước đá, đá", "trà", "món ăn, nấu ăn", "sữa bò"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'りょうり' có nghĩa là gì?",
+                    options: ["cá", "ảnh, bức ảnh", "món ăn, nấu ăn", "luyện tập"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ぎゅうにゅう' có nghĩa là gì?",
+                    options: ["nước đá, đá", "quạt máy", "sữa bò", "trà"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ちゅうがっこう' có nghĩa là gì?",
+                    options: ["thư viện", "bệnh viện", "sách giáo khoa", "trường trung học cơ sở"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'きょうかしょ' có nghĩa là gì?",
+                    options: ["luyện tập", "sách giáo khoa", "ảnh, bức ảnh", "thư viện"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'れんしゅう' có nghĩa là gì?",
+                    options: ["món ăn, nấu ăn", "hôm qua", "hôm nay", "luyện tập"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'としょかん' có nghĩa là gì?",
+                    options: ["thư viện", "trường trung học cơ sở", "bệnh viện", "sách giáo khoa"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'にんぎょう' có nghĩa là gì?",
+                    options: ["mũ", "ca sĩ", "búp bê", "ảnh, bức ảnh"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'びょういん' có nghĩa là gì?",
+                    options: ["xe đạp", "bệnh viện", "thư viện", "trường trung học cơ sở"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じてんしゃ' có nghĩa là gì?",
+                    options: ["trâu", "xe đạp", "mũ", "quạt máy"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'すいぎゅう' có nghĩa là gì?",
+                    options: ["sữa bò", "bệnh viện", "cá", "trâu"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'げつようび' có nghĩa là gì?",
+                    options: ["thứ ba", "thứ hai", "thứ tư", "chủ nhật"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'かようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "thứ ba", "thứ hai"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'すいようび' có nghĩa là gì?",
+                    options: ["thứ tư", "thứ ba", "thứ bảy", "hôm nay"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'もくようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "chủ nhật", "thứ tư"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'きんようび' có nghĩa là gì?",
+                    options: ["thứ năm", "thứ sáu", "thứ bảy", "thứ hai"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'どようび' có nghĩa là gì?",
+                    options: ["hôm qua", "chủ nhật", "thứ bảy", "thứ tư"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にちようび' có nghĩa là gì?",
+                    options: ["ngày mai", "chủ nhật", "thứ hai", "thứ sáu"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'きのう' có nghĩa là gì?",
+                    options: ["hôm nay", "thứ hai", "hôm qua", "ngày mai"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'きょう' có nghĩa là gì?",
+                    options: ["nhiều", "hôm qua", "ngày mai", "hôm nay"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'あした' có nghĩa là gì?",
+                    options: ["hôm nay", "ngày mai", "hôm qua", "thứ ba"],
+                    correct: 1
+                },
+                {
+                    question: "'bia' trong tiếng Nhật là gì?",
+                    options: ["コーラ", "ビール", "コーヒー", "パン"],
+                    correct: 1
+                },
+                {
+                    question: "'coca cola' trong tiếng Nhật là gì?",
+                    options: ["サラダ", "コーラ", "ケーキ", "ヨーグルト"],
+                    correct: 1
+                },
+                {
+                    question: "'bánh mì' trong tiếng Nhật là gì?",
+                    options: ["パン", "コーヒー", "バナナ", "にほん"],
+                    correct: 0
+                },
+                {
+                    question: "'salad' trong tiếng Nhật là gì?",
+                    options: ["ケーキ", "サラダ", "アイスクリーム", "パパイヤ"],
+                    correct: 1
+                },
+                {
+                    question: "'bánh kem' trong tiếng Nhật là gì?",
+                    options: ["マンゴー", "パン", "ケーキ", "ドリアン"],
+                    correct: 2
+                },
+                {
+                    question: "'cà phê' trong tiếng Nhật là gì?",
+                    options: ["コーヒー", "ココナッツ", "ベトナム", "ビール"],
+                    correct: 0
+                },
+                {
+                    question: "'sữa chua' trong tiếng Nhật là gì?",
+                    options: ["サラダ", "ヨーグルト", "パイナップル", "ちゅうごく"],
+                    correct: 1
+                },
+                {
+                    question: "'kem' trong tiếng Nhật là gì?",
+                    options: ["マンゴスチン", "アイスクリーム", "コーラ", "にほん"],
+                    correct: 1
+                },
+                {
+                    question: "'đu đủ' trong tiếng Nhật là gì?",
+                    options: ["ドリアン", "パパイヤ", "パン", "ベトナム"],
+                    correct: 1
+                },
+                {
+                    question: "'chuối' trong tiếng Nhật là gì?",
+                    options: ["ヨーグルト", "サラダ", "バナナ", "ココナッツ"],
+                    correct: 2
+                },
+                {
+                    question: "'dừa' trong tiếng Nhật là gì?",
+                    options: ["ココナッツ", "ビール", "ケーキ", "マンゴー"],
+                    correct: 0
+                },
+                {
+                    question: "'dứa' trong tiếng Nhật là gì?",
+                    options: ["コーラ", "パイナップル", "パパイヤ", "ちゅうごく"],
+                    correct: 1
+                },
+                {
+                    question: "'xoài' trong tiếng Nhật là gì?",
+                    options: ["バナナ", "ドリアン", "マンゴー", "コーヒー"],
+                    correct: 2
+                },
+                {
+                    question: "'măng cụt' trong tiếng Nhật là gì?",
+                    options: ["マンゴスチン", "サラダ", "ベトナム", "パン"],
+                    correct: 0
+                },
+                {
+                    question: "'sầu riêng' trong tiếng Nhật là gì?",
+                    options: ["パイナップル", "ヨーグルト", "ドリアン", "にほん"],
+                    correct: 2
+                },
+                {
+                    question: "'Việt Nam' trong tiếng Nhật là gì?",
+                    options: ["ちゅうごく", "ベトナム", "にほん", "ビール"],
+                    correct: 1
+                },
+                {
+                    question: "'Trung Quốc' trong tiếng Nhật là gì?",
+                    options: ["ベトナム", "ココナッツ", "ちゅうごく", "アイスクリーム"],
+                    correct: 2
+                },
+                {
+                    question: "'Nhật Bản' trong tiếng Nhật là gì?",
+                    options: ["パン", "にほん", "ちゅうごく", "マンゴスチン"],
+                    correct: 1
+                },
+                {
+                    question: "'sô-cô-la' trong tiếng Nhật là gì?",
+                    options: ["カフェ", "チョコレート", "ジュース", "フォー"],
+                    correct: 1
+                },
+                {
+                    question: "'bữa tiệc, tiệc' trong tiếng Nhật là gì?",
+                    options: ["パーティー", "コンピューター", "ハイフォン", "ブンチャー"],
+                    correct: 0
+                },
+                {
+                    question: "'quán cà phê, cà phê' trong tiếng Nhật là gì?",
+                    options: ["ジュース", "カフェ", "バインチュン", "ニャチャン"],
+                    correct: 1
+                },
+                {
+                    question: "'nước trái cây, nước ngọt' trong tiếng Nhật là gì?",
+                    options: ["フォー", "コンピューター", "ジュース", "チョコレート"],
+                    correct: 2
+                },
+                {
+                    question: "'máy tính' trong tiếng Nhật là gì?",
+                    options: ["コンピューター", "カフェ", "パーティー", "ハイフォン"],
+                    correct: 0
+                },
+                {
+                    question: "'Hải Phòng' trong tiếng Nhật là gì?",
+                    options: ["ニャチャン", "ハイフォン", "ブンチャー", "ジュース"],
+                    correct: 1
+                },
+                {
+                    question: "'Nha Trang' trong tiếng Nhật là gì?",
+                    options: ["パーティー", "バインチュン", "ニャチャン", "フォー"],
+                    correct: 2
+                },
+                {
+                    question: "'phở' trong tiếng Nhật là gì?",
+                    options: ["フォー", "チョコレート", "コンピューター", "カフェ"],
+                    correct: 0
+                },
+                {
+                    question: "'bún chả' trong tiếng Nhật là gì?",
+                    options: ["ハイフォン", "ブンチャー", "ジュース", "パーティー"],
+                    correct: 1
+                },
+                {
+                    question: "'bánh chưng' trong tiếng Nhật là gì?",
+                    options: ["カフェ", "ニャチャン", "フォー", "バインチュン"],
+                    correct: 3
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "ああ、Minhさん。どうぞ·" },
+                    { "text": "Minhさんはアイスクリームがすきですか" },
+                    { "text": "Lanさんはなにがすきですか" },
+                    { "text": "Lanさんはココナッツがすきですか" },
+                    { "text": "やまもとさんもフォーがすきですか" }
+                ],
+                "columnB": [
+                    { "text": "はい、ココナッツがすきです" },
+                    { "text": "おじゃまします。" },
+                    { "text": "ケーキがすきです" },
+                    { "text": "はい、わたしもすきです" },
+                    { "text": "いいえ、すきではありません" }
+                ],
+                "correct": [
+                    [0, 1],
+                    [1, 4],
+                    [2, 2],
+                    [3, 0],
+                    [4, 3]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "コーラ",
+                        "ココナッツ",
+                        "チョコレート"
+                    ],
+                    correctAnswer: "コ",
+                    hint: "Có một từ vựng liên quan tới giải khát, nước uống có ga"
+                },
+                {
+                    words: [
+                        "マンゴスチン",
+                        "ニャチャン",
+                        "バインチュン"
+                    ],
+                    correctAnswer: "チ",
+                    hint: "Có một từ vựng liên quan tới món ăn truyền thống của Việt Nam, thường xuất hiện vào dịp Tết"
+                },
+                {
+                    words: [
+                        "ビール",
+                        "ヨーグルト",
+                        "パイナップル"
+                    ],
+                    correctAnswer: "ル",
+                    hint: "Có một từ vựng liên quan tới giải khát, đồ uống có cồn được làm từ lúa mạch"
+                },
+                {
+                    words: [
+                        "パン",
+                        "ドリアン",
+                        "ハイフォン"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ vựng liên quan tới món ăn, thực phẩm cơ bản được làm từ bột mì"
+                }
+                ,
+                {
+                    words: [
+                        "ケーキ",
+                        "コーヒー",
+                        "アイスクリーム"
+                    ],
+                    correctAnswer: "ー",
+                    hint: "Có một từ vựng liên quan tới món tráng miệng, thường được làm từ bột mì, đường và kem, có thể có nhiều hương vị khác nhau"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["おみや"," ?"],
+                        ["? "," つよう "," ?"],
+                        ["? "," ょういん"]
+                    ],
+                    correctSequence: ["おみやげ", "げつようび", "びょういん"]
+                },
+                {
+                    words: [
+                        ["でん "," ?"],
+                        ["? "," んよう "," ?"],
+                        ["?"," ょういん"]
+                    ],
+                    correctSequence: ["でんき", "きんようび", "びょういん"]
+                },
+                {
+                    words: [
+                        ["まんが "," ?"],
+                        ["?","っ"," ?"],
+                        ["? "," のう"],
+                    ],
+                    correctSequence: ["まんが", "がっき", "きのう"]
+                },
+                {
+                    words: [
+                        ["いっさ ", " ?"],
+                        ["?"," ち"," ?"],
+                        ["? "," てんしゃ"],
+                    ],
+                    correctSequence: ["いっさい", "いちじ", "じてんしゃ"]
+                },
+                {
+                    words: [
+                        ["せんせ ", " ?"],
+                        ["?"," っさ "," ?"],
+                        ["? "," りぐち"],
+                    ],
+                    correctSequence: ["せんせい", "いっさい", "いりぐち"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Bạn có thích dứa không?", japanese:"あなたはパイナップルがすきですか"},
+                {vietnamese: "Tôi thích đủ đủ và bánh kem", japanese: "わたしはパイナップルとケーキがすきです"},
+                {vietnamese: "Bạn Minh cũng thích dừa hả", japanese: "Minhさんもココナッツがすきですか"},
+                {vietnamese: "Tôi không thích  nước coca cola", japanese: "わたしはコーラがすきではありません"},
+                {vietnamese: "Bạn Minh có thích măng cụt không", japanese: "Minhさんはマンゴスチンがすきですか"},
+            ],
+            exercise6: [
+                {
+                    sentence: "あなたは _____がすき ですか。",
+                    options: ["どれ", "だれ", "なに", "なんようび"],
+                    correct: 2
+                },
+                {
+                    sentence: "Minhさん _____ ほんがすきですか。",
+                    options: ["が", "も", "なん", "おいくつ"],
+                    correct: 1
+                },
+                {
+                    sentence: "きょうは _____ ですか。",
+                    options: ["だれ", "どこ", "なんようび", "なんさい"],
+                    correct: 2
+                },
+                {
+                    sentence: "Minhさんは ほん_____まんがが ですか。",
+                    options: ["と", "どれ", "なんの", "いくら"],
+                    correct: 0
+                },
+                {
+                    sentence: "Lanさんはですか。",
+                    options: ["だれが", "なにじん", "どれが", "なんの"],
+                    correct: 1
+                }
+            ]
+        }
+    },
     quiz7: {
         title: "Bài test 19",
         description: "Hỏi về thời gian trong năm",
