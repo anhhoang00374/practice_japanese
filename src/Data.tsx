@@ -1,4 +1,318 @@
 const dataQuizTemplates = {
+    quiz9: {
+        title: "Bài test 21",
+        description: "Quá khứ của danh từ",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'あめ' có nghĩa là gì?",
+                    options: ["Trời nắng", "Trời mưa", "nhà", "trời âm u, nhiều mây"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'はれ' có nghĩa là gì?",
+                    options: ["Trời nắng", "Trời mưa", "sáng nay", "tuần trước"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'うち' có nghĩa là gì?",
+                    options: ["trời âm u, nhiều mây", "công việc, đi làm", "nhà", "làm thêm"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'くもり' có nghĩa là gì?",
+                    options: ["hôm kia", "trời âm u, nhiều mây", "Trời nắng", "ngày 1"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'おととい' có nghĩa là gì?",
+                    options: ["ngày 2", "sáng nay", "hôm kia", "tuần trước"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'しごと' có nghĩa là gì?",
+                    options: ["công việc, đi làm", "làm thêm", "nhà", "Trời mưa"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'アルバイト' có nghĩa là gì?",
+                    options: ["công việc, đi làm", "làm thêm", "tuần trước", "sáng nay"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'せんしゅう' có nghĩa là gì?",
+                    options: ["hôm kia", "tuần trước", "ngày 3", "ngày 4"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'けさ' có nghĩa là gì?",
+                    options: ["sáng nay", "Trời nắng", "trời âm u, nhiều mây", "ngày 5"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ついたち' có nghĩa là gì?",
+                    options: ["ngày 2", "ngày 1", "ngày 3", "ngày 4"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ふつか' có nghĩa là gì?",
+                    options: ["ngày 5", "ngày 3", "ngày 2", "ngày 1"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'みっか' có nghĩa là gì?",
+                    options: ["ngày 3", "ngày 6", "ngày 2", "ngày 4"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'よっか' có nghĩa là gì?",
+                    options: ["ngày 5", "ngày 4", "ngày 7", "ngày 8"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'いつか' có nghĩa là gì?",
+                    options: ["ngày 8", "ngày 5", "ngày 9", "ngày 10"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'こんしゅう' có nghĩa là gì?",
+                    options: ["ngày 6", "ngày 7", "ngày 8", "ngày 9"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'らいしゅう' có nghĩa là gì?",
+                    options: ["ngày 10", "ngày 11", "ngày 7", "ngày 6"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'むいか' có nghĩa là gì?",
+                    options: ["ngày 9", "ngày 8", "ngày 10", "ngày 11"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'なのか' có nghĩa là gì?",
+                    options: ["ngày 9", "ngày 8", "ngày 7", "ngày 10"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ようか' có nghĩa là gì?",
+                    options: ["ngày 11", "ngày 12", "ngày 10", "ngày 9"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ここのか' có nghĩa là gì?",
+                    options: ["ngày 10", "ngày 11", "ngày 12", "ngày 8"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'とおか' có nghĩa là gì?",
+                    options: ["ngày 9", "ngày 12", "ngày 11", "ngày 10"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '七' có nghĩa là gì?",
+                    options: ["Bát", "Thất", "Cửu", "Lục"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '八' có nghĩa là gì?",
+                    options: ["Tam", "Bát", "Nhị", "Từ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '九' có nghĩa là gì?",
+                    options: ["Cửu", "Nhất", "Ngủ", "Lục"],
+                    correct: 0
+                },
+                {
+                    question: "Từ '一' có nghĩa là gì?",
+                    options: ["Nhị", "Tam", "Nhất", "Bát"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '二' có nghĩa là gì?",
+                    options: ["Thất", "Cửu", "Tam", "Nhị"],
+                    correct: 3
+                },
+                {
+                    question: "Từ '三' có nghĩa là gì?",
+                    options: ["Tam", "Từ", "Lục", "Nhất"],
+                    correct: 0
+                },
+                {
+                    question: "Từ '四' có nghĩa là gì?",
+                    options: ["Ngủ", "Nhị", "Từ", "Cửu"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '五' có nghĩa là gì?",
+                    options: ["Lục", "Ngủ", "Bát", "Thất"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '六' có nghĩa là gì?",
+                    options: ["Lục", "Cửu", "Tam", "Nhất"],
+                    correct: 0
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    {"text": "きのうはなにようびでしたか"},
+                    {"text": "なにがすきですか"},
+                    {"text": "おとといはアルバイトでしたか"},
+                    {"text": "このひとはだれですか"},
+                    {"text": "これはあなたのじょうぎですか"},
+                    {"text": "このほんはLinhさんのですか"},
+                    {"text": "かぞくはなんにんですか"},
+                    {"text": "これはなんのほんですか"}
+                ],
+                "columnB": [
+                    {"text": "このひとはたなかさんです"},
+                    {"text": "スポーツのほんです"},
+                    {"text": "はい、そうです"},
+                    {"text": "きんようびでした"},
+                    {"text": "いいえ、わたしのです。"},
+                    {"text": "よにんです"},
+                    {"text": "はい、わたしのです"},
+                    {"text": "いぬとねこがすきです"}
+                ],
+                "correct": [
+                    [0, 3],
+                    [1, 7],
+                    [2, 2],
+                    [3, 0],
+                    [4, 6],
+                    [5, 4],
+                    [6, 5],
+                    [7, 1]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "なつ",
+                        "いちがつ",
+                        "しゅうまつ"
+                    ],
+                    correctAnswer: "つ",
+                    hint: "Có một từ vựng liên quan tới thời tiết, mùa trong năm, thường có nắng và nóng"
+                },
+                {
+                    words: [
+                        "しゅうせいえき",
+                        "じしょ",
+                        "ぼうし"
+                    ],
+                    correctAnswer: "し",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được đội trên đầu để bảo vệ khỏi ánh nắng mặt trời hoặc thời tiết xấu"
+                },
+                {
+                    words: [
+                        "ペン",
+                        "パソコン",
+                        "シャープペンシル"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để viết hoặc vẽ trên giấy"
+                },
+                {
+                    words: [
+                        "ノート",
+                        "スポーツ",
+                        "カレンダー"
+                    ],
+                    correctAnswer: "ー",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để ghi chép, học tập hoặc làm việc, thường có nhiều trang giấy bên trong"
+                }
+                ,
+                {
+                    words: [
+                        "ケーキ",
+                        "コーヒー",
+                        "アイスクリーム"
+                    ],
+                    correctAnswer: "ー",
+                    hint: "Có một từ vựng liên quan tới món tráng miệng, thường được làm từ bột mì, đường và kem, có thể có nhiều hương vị khác nhau"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["さい", " ?"],
+                        ["? ", " つ ", " ?"],
+                        ["? ", " ぞく"]
+                    ],
+                    correctSequence: ["さいふ", "ふつか", "かぞく"]
+                },
+                {
+                    words: [
+                        ["はさ ", " ?"],
+                        ["? ", " っ ", " ?"],
+                        ["?", " ばん"]
+                    ],
+                    correctSequence: ["はさみ", "みっか", "かばん"]
+                },
+                {
+                    words: [
+                        ["しご ", " ?"],
+                        ["?", "け", " ?"],
+                        ["? ", " え"],
+                    ],
+                    correctSequence: ["しごと", "とけい", "いえ"]
+                },
+                {
+                    words: [
+                        ["まいに ", " ?"],
+                        ["?", " ゅうがくせ", " ?"],
+                        ["? ", " しゃ"],
+                    ],
+                    correctSequence: ["まいにち", "ちゅうがくせい", "いしゃ"]
+                },
+                {
+                    words: [
+                        ["せんせ ", " ?"],
+                        ["?", " っさ ", " ?"],
+                        ["? ", " りぐち"],
+                    ],
+                    correctSequence: ["せんせい", "いっさい", "いりぐち"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Hôm qua là thứ 7", japanese: "きのうはどようびでした"},
+                {vietnamese: "Hôm kia là thứ mấy", japanese: "おとといはなにようびでしたか"},
+                {vietnamese: "Hôm qua không phải thứ 4", japanese: "きのうはすいようびではありませんでした"},
+                {vietnamese: "Hôm qua trời có mưa không?", japanese: "きのうはあめでしたか"},
+                {vietnamese: "Hôm qua tời không nắng", japanese: "きのうははれではありませんでした"},
+            ],
+            exercise6: [
+                {
+                    sentence: "_____ は にちようびでした。",
+                    options: ["あした", "きょう", "きのう", "あさって"],
+                    correct: 2
+                },
+                {
+                    sentence: "Minhさん _____ ほんがすきですか。",
+                    options: ["が", "も", "なん", "おいくつ"],
+                    correct: 1
+                },
+                {
+                    sentence: "あなたは_____ がすきですか。",
+                    options: ["だれ", "どこ", "なんようび", "なに"],
+                    correct: 3
+                },
+                {
+                    sentence: "Minhさんは ほん_____まんすき ですか。",
+                    options: ["と", "どれ", "なんの", "いくら"],
+                    correct: 0
+                },
+                {
+                    sentence: "クラスは_____ですか。",
+                    options: ["だれが", "なにじん", "なんにん", "なんの"],
+                    correct: 2
+                }
+            ]
+        }
+    },
     quiz8: {
         title: "Bài test 20",
         description: "Ôn tập giữa học kỳ 2",
@@ -338,18 +652,18 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "ああ、Minhさん。どうぞ·" },
-                    { "text": "Minhさんはアイスクリームがすきですか" },
-                    { "text": "Lanさんはなにがすきですか" },
-                    { "text": "Lanさんはココナッツがすきですか" },
-                    { "text": "やまもとさんもフォーがすきですか" }
+                    {"text": "ああ、Minhさん。どうぞ·"},
+                    {"text": "Minhさんはアイスクリームがすきですか"},
+                    {"text": "Lanさんはなにがすきですか"},
+                    {"text": "Lanさんはココナッツがすきですか"},
+                    {"text": "やまもとさんもフォーがすきですか"}
                 ],
                 "columnB": [
-                    { "text": "はい、ココナッツがすきです" },
-                    { "text": "おじゃまします。" },
-                    { "text": "ケーキがすきです" },
-                    { "text": "はい、わたしもすきです" },
-                    { "text": "いいえ、すきではありません" }
+                    {"text": "はい、ココナッツがすきです"},
+                    {"text": "おじゃまします。"},
+                    {"text": "ケーキがすきです"},
+                    {"text": "はい、わたしもすきです"},
+                    {"text": "いいえ、すきではありません"}
                 ],
                 "correct": [
                     [0, 1],
@@ -410,47 +724,47 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["おみや"," ?"],
-                        ["? "," つよう "," ?"],
-                        ["? "," ょういん"]
+                        ["おみや", " ?"],
+                        ["? ", " つよう ", " ?"],
+                        ["? ", " ょういん"]
                     ],
                     correctSequence: ["おみやげ", "げつようび", "びょういん"]
                 },
                 {
                     words: [
-                        ["でん "," ?"],
-                        ["? "," んよう "," ?"],
-                        ["?"," ょういん"]
+                        ["でん ", " ?"],
+                        ["? ", " んよう ", " ?"],
+                        ["?", " ょういん"]
                     ],
                     correctSequence: ["でんき", "きんようび", "びょういん"]
                 },
                 {
                     words: [
-                        ["まん "," ?"],
-                        ["?","っ"," ?"],
-                        ["? "," のう"],
+                        ["まん ", " ?"],
+                        ["?", "っ", " ?"],
+                        ["? ", " のう"],
                     ],
                     correctSequence: ["まんが", "がっき", "きのう"]
                 },
                 {
                     words: [
                         ["いっさ ", " ?"],
-                        ["?"," ち"," ?"],
-                        ["? "," てんしゃ"],
+                        ["?", " ち", " ?"],
+                        ["? ", " てんしゃ"],
                     ],
                     correctSequence: ["いっさい", "いちじ", "じてんしゃ"]
                 },
                 {
                     words: [
                         ["せんせ ", " ?"],
-                        ["?"," っさ "," ?"],
-                        ["? "," りぐち"],
+                        ["?", " っさ ", " ?"],
+                        ["? ", " りぐち"],
                     ],
                     correctSequence: ["せんせい", "いっさい", "いりぐち"]
                 }
             ],
             exercise5: [
-                {vietnamese: "Bạn Minh có thích dứa không?", japanese:"Minhさんはパイナップルがすきですか"},
+                {vietnamese: "Bạn Minh có thích dứa không?", japanese: "Minhさんはパイナップルがすきですか"},
                 {vietnamese: "Tôi thích đủ đủ và bánh kem", japanese: "わたしはパパイヤとケーキがすきです"},
                 {vietnamese: "Bạn Minh cũng thích dừa hả", japanese: "Minhさんもココナッツがすきですか"},
                 {vietnamese: "Tôi không thích  nước coca cola", japanese: "わたしはコーラがすきではありません"},
@@ -473,7 +787,7 @@ const dataQuizTemplates = {
                     correct: 2
                 },
                 {
-                    sentence: "Minhさんは ほん_____まんがが ですか。",
+                    sentence: "Minhさんは ほん_____まんががすき ですか。",
                     options: ["と", "どれ", "なんの", "いくら"],
                     correct: 0
                 },
@@ -640,20 +954,20 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "あのひとはなにじんですか" },
-                    { "text": "これはなんのほんですか" },
-                    { "text": "Lanさんもじゅうにさいですか" },
-                    { "text": "かぞくはなんにんですか" },
-                    { "text": "Minhさんのほんはどれですか" },
-                    { "text": "これはだれのほんですか" }
+                    {"text": "あのひとはなにじんですか"},
+                    {"text": "これはなんのほんですか"},
+                    {"text": "Lanさんもじゅうにさいですか"},
+                    {"text": "かぞくはなんにんですか"},
+                    {"text": "Minhさんのほんはどれですか"},
+                    {"text": "これはだれのほんですか"}
                 ],
                 "columnB": [
-                    { "text": "Lanさんのほんです" },
-                    { "text": "はい、そうです" },
-                    { "text": "あれです" },
-                    { "text": "ちゅうごくじんです" },
-                    { "text": "よにんです" },
-                    { "text": "スポーツのほんです" }
+                    {"text": "Lanさんのほんです"},
+                    {"text": "はい、そうです"},
+                    {"text": "あれです"},
+                    {"text": "ちゅうごくじんです"},
+                    {"text": "よにんです"},
+                    {"text": "スポーツのほんです"}
                 ],
                 "correct": [
                     [0, 3],
@@ -715,47 +1029,47 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["ふ "," ?"],
-                        ["? "," ?"],
-                        ["? ","のう"]
+                        ["ふ ", " ?"],
+                        ["? ", " ?"],
+                        ["? ", "のう"]
                     ],
                     correctSequence: ["ふゆ", "ゆき", "きのう"]
                 },
                 {
                     words: [
-                        ["いちが "," ?"],
-                        ["? ","く"," ?"],
-                        ["?"," き"]
+                        ["いちが ", " ?"],
+                        ["? ", "く", " ?"],
+                        ["?", " き"]
                     ],
                     correctSequence: ["いちがつ", "つくえ", "えき"]
                 },
                 {
                     words: [
-                        ["ぶ "," ?"],
-                        ["?","んじょう"," ?"],
-                        ["? "," ょういん"],
+                        ["ぶ ", " ?"],
+                        ["?", "んじょう", " ?"],
+                        ["? ", " ょういん"],
                     ],
                     correctSequence: ["ぶた", "たんじょうび", "びょういん"]
                 },
                 {
                     words: [
                         ["な ", " ?"],
-                        ["?"," ?"],
-                        ["? "," ょう"],
+                        ["?", " ?"],
+                        ["? ", " ょう"],
                     ],
                     correctSequence: ["なつ", "つき", "きょう"]
                 },
                 {
                     words: [
                         ["ちゅうがっこ ", " ?"],
-                        ["?"," ?"],
-                        ["? "," ちがつ"],
+                        ["?", " ?"],
+                        ["? ", " ちがつ"],
                     ],
                     correctSequence: ["ちゅうがっこう", "うし", "しちがつ"]
                 }
             ],
             exercise5: [
-                {vietnamese: "Đây là sách của ai", japanese:"これはだれのほんですか"},
+                {vietnamese: "Đây là sách của ai", japanese: "これはだれのほんですか"},
                 {vietnamese: "Đây là sách về chủ đề gì", japanese: "これはなんのほんですか"},
                 {vietnamese: "Quyển sách của Minh là quyển nào", japanese: "Minhさんのほんはどれですか"},
                 {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
@@ -849,20 +1163,20 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "これはあなたのじょうぎですか" },
-                    { "text": "それはだれのけしゴムですか" },
-                    { "text": "そのぺんはだれのですか" },
-                    { "text": "あなたのぼうしはいくらですか" },
-                    { "text": "Lanさんのべんはこれですか" },
-                    { "text": "かぞくはなんにんですか" }
+                    {"text": "これはあなたのじょうぎですか"},
+                    {"text": "それはだれのけしゴムですか"},
+                    {"text": "そのぺんはだれのですか"},
+                    {"text": "あなたのぼうしはいくらですか"},
+                    {"text": "Lanさんのべんはこれですか"},
+                    {"text": "かぞくはなんにんですか"}
                 ],
                 "columnB": [
-                    { "text": "よにんです" },
-                    { "text": "わたしのです。" },
-                    { "text": "123450ドンです" },
-                    { "text": "いいえ、それです" },
-                    { "text": "わたしのけしゴムですか" },
-                    { "text": "はい、わたしのです" }
+                    {"text": "よにんです"},
+                    {"text": "わたしのです。"},
+                    {"text": "123450ドンです"},
+                    {"text": "いいえ、それです"},
+                    {"text": "わたしのけしゴムですか"},
+                    {"text": "はい、わたしのです"}
                 ],
                 "correct": [
                     [0, 5],
@@ -924,47 +1238,47 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["も "," ?"],
-                        ["? ","く "," よう"," ?"],
-                        ["? "," ょういん"]
+                        ["も ", " ?"],
+                        ["? ", "く ", " よう", " ?"],
+                        ["? ", " ょういん"]
                     ],
                     correctSequence: ["もも", "もくようび", "びょういん"]
                 },
                 {
                     words: [
-                        ["や "," ?"],
-                        ["? "," ?"],
-                        ["?"," ようび"]
+                        ["や ", " ?"],
+                        ["? ", " ?"],
+                        ["?", " ようび"]
                     ],
                     correctSequence: ["やま", "まど", "どようび"]
                 },
                 {
                     words: [
-                        ["く "," ?"],
-                        ["?","ゅうご"," ?"],
-                        ["? "," だもの"],
+                        ["く ", " ?"],
+                        ["?", "ゅうご", " ?"],
+                        ["? ", " だもの"],
                     ],
                     correctSequence: ["くち", "ちゅうごく", "くだもの"]
                 },
                 {
                     words: [
                         ["ふ ", " ?"],
-                        ["?"," ?"],
-                        ["? "," おり"],
+                        ["?", " ?"],
+                        ["? ", " おり"],
                     ],
                     correctSequence: ["ふね", "ねこ", "こおり"]
                 },
                 {
                     words: [
                         ["そ ", " ?"],
-                        ["?","け"," ?"],
-                        ["? "," しゃ"],
+                        ["?", "け", " ?"],
+                        ["? ", " しゃ"],
                     ],
                     correctSequence: ["そと", "とけい", "いしゃ"]
                 }
             ],
             exercise5: [
-                {vietnamese: "Đây là cái hộp bút của ai", japanese:"これはだれのペンケースですか"},
+                {vietnamese: "Đây là cái hộp bút của ai", japanese: "これはだれのペンケースですか"},
                 {vietnamese: "Đây là cái kéo của bạn phải không", japanese: "これはあなたのはさみですか"},
                 {vietnamese: "Quyển sách của bạn giá bao nhiêu tiền", japanese: "あなたのほんはいくらですか"},
                 {vietnamese: "người này là ai vậy?", japanese: "このひとはだれですか"},
@@ -1163,20 +1477,20 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "あなたのかばんはいくらですか" },
-                    { "text": "このほんはLinhさんのですか" },
-                    { "text": "かぞくはなんにんですか" },
-                    { "text": "このひとはだれですか" },
-                    { "text": "あのひとはなにじんですか" },
-                    { "text": "これはあなたのじょうぎですか" }
+                    {"text": "あなたのかばんはいくらですか"},
+                    {"text": "このほんはLinhさんのですか"},
+                    {"text": "かぞくはなんにんですか"},
+                    {"text": "このひとはだれですか"},
+                    {"text": "あのひとはなにじんですか"},
+                    {"text": "これはあなたのじょうぎですか"}
                 ],
                 "columnB": [
-                    { "text": "はい、わたしのです" },
-                    { "text": "にほんじんですか" },
-                    { "text": "このひとはたなかさんです" },
-                    { "text": "いいえ、わたしのです。" },
-                    { "text": "1200000ドンです" },
-                    { "text": "よにんです" }
+                    {"text": "はい、わたしのです"},
+                    {"text": "にほんじんですか"},
+                    {"text": "このひとはたなかさんです"},
+                    {"text": "いいえ、わたしのです。"},
+                    {"text": "1200000ドンです"},
+                    {"text": "よにんです"}
                 ],
                 "correct": [
                     [0, 4],
@@ -1238,41 +1552,41 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["か "," ?"],
-                        ["? ","た "," ?"],
-                        ["? "," ろ"]
+                        ["か ", " ?"],
+                        ["? ", "た ", " ?"],
+                        ["? ", " ろ"]
                     ],
                     correctSequence: ["かわ", "わたし", "しろ"]
                 },
                 {
                     words: [
-                        ["や "," ?"],
-                        ["? "," ?"],
-                        ["?"," ず"]
+                        ["や ", " ?"],
+                        ["? ", " ?"],
+                        ["?", " ず"]
                     ],
                     correctSequence: ["やま", "まち", "ちず"]
                 },
                 {
                     words: [
-                        ["に "," ?"],
-                        ["?"," ?"],
-                        ["? "," く"," え"],
+                        ["に ", " ?"],
+                        ["?", " ?"],
+                        ["? ", " く", " え"],
                     ],
                     correctSequence: ["にく", "くつ", "つくえ"]
                 },
                 {
                     words: [
                         ["が ", " ?"],
-                        ["?"," ?"],
-                        ["? "," お"," い"],
+                        ["?", " ?"],
+                        ["? ", " お", " い"],
                     ],
                     correctSequence: ["がか", "かお", "おおい"]
                 },
                 {
                     words: [
                         ["は ", " ?"],
-                        ["?"," ?"],
-                        ["? "," ぜ"],
+                        ["?", " ?"],
+                        ["? ", " ぜ"],
                     ],
                     correctSequence: ["はな", "なか", "かぜ"]
                 }
@@ -1462,26 +1776,26 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "かぞくは　なんにんですか" },
-                    { "text": "ここは　がっこうですか" },
-                    { "text": "Lanさんは　どこですか" },
-                    { "text": "あのぼうしは　いくらですか" },
-                    { "text": "そのテレビは　いくらですか" },
-                    { "text": "おしごとは　なんですか" },
-                    { "text": "あなたは　なんさいですか" },
-                    { "text": "ただいま" },
-                    { "text": "いってらっしゃい" }
+                    {"text": "かぞくは　なんにんですか"},
+                    {"text": "ここは　がっこうですか"},
+                    {"text": "Lanさんは　どこですか"},
+                    {"text": "あのぼうしは　いくらですか"},
+                    {"text": "そのテレビは　いくらですか"},
+                    {"text": "おしごとは　なんですか"},
+                    {"text": "あなたは　なんさいですか"},
+                    {"text": "ただいま"},
+                    {"text": "いってらっしゃい"}
                 ],
                 "columnB": [
-                    { "text": "いってきます" },
-                    { "text": "おかえりなさい" },
-                    { "text": "ちゅうがくせいです" },
-                    { "text": "いいえ、ぎんこうです" },
-                    { "text": "かぞくは　さんにんです" },
-                    { "text": "じゅうにさいです" },
-                    { "text": "ぎんこうです" },
-                    { "text": "これは　１２００００００ドンです" },
-                    { "text": "５００００ドンです" }
+                    {"text": "いってきます"},
+                    {"text": "おかえりなさい"},
+                    {"text": "ちゅうがくせいです"},
+                    {"text": "いいえ、ぎんこうです"},
+                    {"text": "かぞくは　さんにんです"},
+                    {"text": "じゅうにさいです"},
+                    {"text": "ぎんこうです"},
+                    {"text": "これは　１２００００００ドンです"},
+                    {"text": "５００００ドンです"}
                 ],
                 "correct": [
                     [0, 4], [1, 3], [2, 6], [3, 8],
@@ -1539,41 +1853,41 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["が ", " っ ", " こ"," ?"],
-                        ["? "," ?"],
-                        ["? "," ゃ"," し"," ん"]
+                        ["が ", " っ ", " こ", " ?"],
+                        ["? ", " ?"],
+                        ["? ", " ゃ", " し", " ん"]
                     ],
                     correctSequence: ["がっこう", "うし", "しゃしん"]
                 },
                 {
                     words: [
-                        ["か "," ?"],
-                        ["? "," っ "," ?"],
-                        ["?"," しゅ"]
+                        ["か ", " ?"],
+                        ["? ", " っ ", " ?"],
+                        ["?", " しゅ"]
                     ],
                     correctSequence: ["かさ", "さっか", "かしゅ"]
                 },
                 {
                     words: [
-                        ["きょう "," し"," ?"],
-                        ["?"," く"," "],
-                        ["? "," き"],
+                        ["きょう ", " し", " ?"],
+                        ["?", " く", " "],
+                        ["? ", " き"],
                     ],
                     correctSequence: ["きょうしつ", "つくえ", "えき"]
                 },
                 {
                     words: [
                         ["が ", " ?"],
-                        ["?"," ?"],
-                        ["? "," お"," い"],
+                        ["?", " ?"],
+                        ["? ", " お", " い"],
                     ],
                     correctSequence: ["がか", "かお", "おおい"]
                 },
                 {
                     words: [
                         ["い ", " ?"],
-                        ["?"," い"," よ"," う"," ?"],
-                        ["? "," ょ"," う"," い"," ん"],
+                        ["?", " い", " よ", " う", " ?"],
+                        ["? ", " ょ", " う", " い", " ん"],
                     ],
                     correctSequence: ["いす", "すいようび", "びょういん"]
                 }
@@ -1581,7 +1895,10 @@ const dataQuizTemplates = {
             exercise5: [
                 {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
                 {vietnamese: "Tôi thức dậy vào lúc 5h30", japanese: "わたしはごじはんにおきます"},
-                {vietnamese: "cái điện thoại di động này giá 3230000 đồng", japanese: "このけいたいでんわはさんびゃくにじゅうさんまんドンです"},
+                {
+                    vietnamese: "cái điện thoại di động này giá 3230000 đồng",
+                    japanese: "このけいたいでんわはさんびゃくにじゅうさんまんドンです"
+                },
                 {vietnamese: "gia đình bạn có bao nhiêu người", japanese: "かぞくはなんにんですか"},
                 {vietnamese: "Cái đồng hồ này giá bao nhiều tiền", japanese: "このとけいはいくらですか"},
                 {vietnamese: "Bạn Lan ở đâu", japanese: "Lanさんはどこですか"},
@@ -1748,26 +2065,26 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "かぞくは　なんにんですか" },
-                    { "text": "ここは　がっこうですか" },
-                    { "text": "Lanさんは　どこですか" },
-                    { "text": "スーパーは　どこですか" },
-                    { "text": "おなまえは　なんですか" },
-                    { "text": "おしごとは　なんですか" },
-                    { "text": "あなたは　なんさいですか" },
-                    { "text": "なんじに　ねますか" },
-                    { "text": "なんじに　おきますか" }
+                    {"text": "かぞくは　なんにんですか"},
+                    {"text": "ここは　がっこうですか"},
+                    {"text": "Lanさんは　どこですか"},
+                    {"text": "スーパーは　どこですか"},
+                    {"text": "おなまえは　なんですか"},
+                    {"text": "おしごとは　なんですか"},
+                    {"text": "あなたは　なんさいですか"},
+                    {"text": "なんじに　ねますか"},
+                    {"text": "なんじに　おきますか"}
                 ],
                 "columnB": [
-                    { "text": "じゅうじに　ねます" },
-                    { "text": "いいえ、ぎんこうです" },
-                    { "text": "ちゅうがくせいです" },
-                    { "text": "じゅうにさいです" },
-                    { "text": "あそこです" },
-                    { "text": "ごじに　おきます" },
-                    { "text": "ぎんこうです" },
-                    { "text": "かぞくは　ごにんです" },
-                    { "text": "Lanです" }
+                    {"text": "じゅうじに　ねます"},
+                    {"text": "いいえ、ぎんこうです"},
+                    {"text": "ちゅうがくせいです"},
+                    {"text": "じゅうにさいです"},
+                    {"text": "あそこです"},
+                    {"text": "ごじに　おきます"},
+                    {"text": "ぎんこうです"},
+                    {"text": "かぞくは　ごにんです"},
+                    {"text": "Lanです"}
                 ],
                 "correct": [
                     [6, 3], [3, 4], [0, 7], [1, 1],
@@ -1825,41 +2142,41 @@ const dataQuizTemplates = {
             exercise4: [
                 {
                     words: [
-                        ["が ", " っ ", " こ"," ?"],
-                        ["? "," ?"],
-                        ["? "," ゃ"," し"," ん"]
+                        ["が ", " っ ", " こ", " ?"],
+                        ["? ", " ?"],
+                        ["? ", " ゃ", " し", " ん"]
                     ],
                     correctSequence: ["がっこう", "うし", "しゃしん"]
                 },
                 {
                     words: [
-                        ["か "," ?"],
-                        ["? "," っ "," ?"],
-                        ["?"," しゅ"]
+                        ["か ", " ?"],
+                        ["? ", " っ ", " ?"],
+                        ["?", " しゅ"]
                     ],
                     correctSequence: ["かさ", "さっか", "かしゅ"]
                 },
                 {
                     words: [
-                        ["きょう "," し"," ?"],
-                        ["?"," く"," "],
-                        ["? "," き"],
+                        ["きょう ", " し", " ?"],
+                        ["?", " く", " "],
+                        ["? ", " き"],
                     ],
                     correctSequence: ["きょうしつ", "つくえ", "えき"]
                 },
                 {
                     words: [
                         ["が ", " ?"],
-                        ["?"," ?"],
-                        ["? "," お"," い"],
+                        ["?", " ?"],
+                        ["? ", " お", " い"],
                     ],
                     correctSequence: ["がか", "かお", "おおい"]
                 },
                 {
                     words: [
                         ["い ", " ?"],
-                        ["?"," い"," よ"," う"," ?"],
-                        ["? "," ょ"," う"," い"," ん"],
+                        ["?", " い", " よ", " う", " ?"],
+                        ["? ", " ょ", " う", " い", " ん"],
                     ],
                     correctSequence: ["いす", "すいようび", "びょういん"]
                 }
@@ -2045,40 +2362,40 @@ const dataQuizTemplates = {
                 {
                     words: [
                         ["や ", " す ", " ?"],
-                        ["? "," ?"],
-                        ["? "," ち"],
+                        ["? ", " ?"],
+                        ["? ", " ち"],
                     ],
                     correctSequence: ["やすみ", "みみ", "みち"]
                 },
                 {
                     words: [
-                        ["く ", " す", " り"," ?"],
-                        ["? ","お"," ?"],
-                        ["?"," す", " み"]
+                        ["く ", " す", " り", " ?"],
+                        ["? ", "お", " ?"],
+                        ["?", " す", " み"]
                     ],
                     correctSequence: ["くすりや", "やおや", "やすみ"]
                 },
                 {
                     words: [
-                        ["し "," ?"],
-                        ["?"," ?"],
-                        ["? "," ち"],
+                        ["し ", " ?"],
+                        ["?", " ?"],
+                        ["? ", " ち"],
                     ],
                     correctSequence: ["しろ", "ろく", "くち"]
                 },
                 {
                     words: [
-                        ["す "," い", " ?"],
-                        ["?"," ぞ"," ?"],
-                        ["? "," ろ"],
+                        ["す ", " い", " ?"],
+                        ["?", " ぞ", " ?"],
+                        ["? ", " ろ"],
                     ],
                     correctSequence: ["すいか", "かぞく", "くろ"]
                 },
                 {
                     words: [
                         ["か ", " ?"],
-                        ["?"," く"," ?"],
-                        ["? "," ん"],
+                        ["?", " く", " ?"],
+                        ["? ", " ん"],
                     ],
                     correctSequence: ["かさ", "さくら", "らん"]
                 }
@@ -2210,7 +2527,7 @@ const dataQuizTemplates = {
                     {id: 4, text: "にほんじん　です"},
                     {id: 5, text: "いいえ、いま　さんじ　です"}
                 ],
-                correct: [[0,1], [1,3], [2,4], [3,2], [4,0]]
+                correct: [[0, 1], [1, 3], [2, 4], [3, 2], [4, 0]]
             },
             exercise3: [
                 {
@@ -2264,7 +2581,7 @@ const dataQuizTemplates = {
                 {
                     words: [
                         ["つ ", " く ", " ?"],
-                        ["? "," ?"],
+                        ["? ", " ?"],
                         ["?"]
                     ],
                     correctSequence: ["つくえ", "えき", "き"]
@@ -2272,16 +2589,16 @@ const dataQuizTemplates = {
                 {
                     words: [
                         ["ぶ ", " ?"],
-                        ["? ","い"," ?"],
-                        ["?"," え"]
+                        ["? ", "い", " ?"],
+                        ["?", " え"]
                     ],
                     correctSequence: ["ぶた", "たいこ", "こえ"]
                 },
                 {
                     words: [
-                        ["は "," ?"],
-                        ["?"," ?"],
-                        ["? "," わ"],
+                        ["は ", " ?"],
+                        ["?", " ?"],
+                        ["? ", " わ"],
                     ],
                     correctSequence: ["はな", "なか", "かわ"]
                 }
@@ -2314,4 +2631,4 @@ const dataQuizTemplates = {
         }
     }
 };
-export default  dataQuizTemplates;
+export default dataQuizTemplates;
