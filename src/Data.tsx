@@ -55,14 +55,14 @@ const dataQuizTemplates = {
                     correct: 1
                 },
                 {
+                    question: "Từ 'こんしゅう' có nghĩa là gì?",
+                    options: ["tuần này", "ngày 7", "ngày 8", "ngày 9"],
+                    correct: 0
+                },
+                {
                     question: "Từ 'ふつか' có nghĩa là gì?",
                     options: ["ngày 5", "ngày 3", "ngày 2", "ngày 1"],
                     correct: 2
-                },
-                {
-                    question: "Từ 'みっか' có nghĩa là gì?",
-                    options: ["ngày 3", "ngày 6", "ngày 2", "ngày 4"],
-                    correct: 0
                 },
                 {
                     question: "Từ 'よっか' có nghĩa là gì?",
@@ -75,8 +75,8 @@ const dataQuizTemplates = {
                     correct: 1
                 },
                 {
-                    question: "Từ 'こんしゅう' có nghĩa là gì?",
-                    options: ["ngày 6", "ngày 7", "ngày 8", "ngày 9"],
+                    question: "Từ 'みっか' có nghĩa là gì?",
+                    options: ["ngày 3", "ngày 6", "ngày 2", "ngày 4"],
                     correct: 0
                 },
                 {
@@ -85,34 +85,49 @@ const dataQuizTemplates = {
                     correct: 2
                 },
                 {
-                    question: "Từ 'むいか' có nghĩa là gì?",
-                    options: ["ngày 9", "ngày 8", "ngày 10", "ngày 11"],
+                    question: "Từ 'ここのか' có nghĩa là gì?",
+                    options: ["ngày 10", "ngày 9", "ngày 12", "ngày 8"],
                     correct: 1
                 },
                 {
                     question: "Từ 'なのか' có nghĩa là gì?",
-                    options: ["ngày 9", "ngày 8", "ngày 7", "ngày 10"],
+                    options: ["ngày 7", "ngày 8", "ngày 9", "ngày 10"],
                     correct: 0
                 },
                 {
-                    question: "Từ 'ようか' có nghĩa là gì?",
-                    options: ["ngày 11", "ngày 12", "ngày 10", "ngày 9"],
-                    correct: 2
-                },
-                {
-                    question: "Từ 'ここのか' có nghĩa là gì?",
-                    options: ["ngày 10", "ngày 11", "ngày 12", "ngày 8"],
-                    correct: 1
-                },
-                {
                     question: "Từ 'とおか' có nghĩa là gì?",
-                    options: ["ngày 9", "ngày 12", "ngày 11", "ngày 10"],
+                    options: ["ngày 9", "ngày 10", "ngày 11", "ngày 9"],
                     correct: 1
+                },
+                {
+                    question: "Từ 'むいか' có nghĩa là gì?",
+                    options: ["ngày 9", "ngày 6", "ngày 10", "ngày 11"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ようか' có nghĩa là gì?",
+                    options: ["ngày 11", "ngày 12", "ngày 8", "ngày 9"],
+                    correct: 2
                 },
                 {
                     question: "Từ '七' có nghĩa là gì?",
                     options: ["Bát", "Thất", "Cửu", "Lục"],
                     correct: 1
+                },
+                {
+                    question: "Từ '一' có nghĩa là gì?",
+                    options: ["Nhị", "Tam", "Nhất", "Bát"],
+                    correct: 2
+                },
+                {
+                    question: "Từ '五' có nghĩa là gì?",
+                    options: ["Lục", "Ngủ", "Bát", "Thất"],
+                    correct: 1
+                },
+                {
+                    question: "Từ '二' có nghĩa là gì?",
+                    options: ["Thất", "Cửu", "Tam", "Nhị"],
+                    correct: 3
                 },
                 {
                     question: "Từ '八' có nghĩa là gì?",
@@ -125,29 +140,14 @@ const dataQuizTemplates = {
                     correct: 0
                 },
                 {
-                    question: "Từ '一' có nghĩa là gì?",
-                    options: ["Nhị", "Tam", "Nhất", "Bát"],
-                    correct: 2
-                },
-                {
-                    question: "Từ '二' có nghĩa là gì?",
-                    options: ["Thất", "Cửu", "Tam", "Nhị"],
-                    correct: 3
-                },
-                {
-                    question: "Từ '三' có nghĩa là gì?",
-                    options: ["Tam", "Từ", "Lục", "Nhất"],
-                    correct: 0
-                },
-                {
                     question: "Từ '四' có nghĩa là gì?",
                     options: ["Ngủ", "Nhị", "Từ", "Cửu"],
                     correct: 2
                 },
                 {
-                    question: "Từ '五' có nghĩa là gì?",
-                    options: ["Lục", "Ngủ", "Bát", "Thất"],
-                    correct: 1
+                    question: "Từ '三' có nghĩa là gì?",
+                    options: ["Tam", "Từ", "Lục", "Nhất"],
+                    correct: 0
                 },
                 {
                     question: "Từ '六' có nghĩa là gì?",
@@ -279,10 +279,10 @@ const dataQuizTemplates = {
             ],
             exercise5: [
                 {vietnamese: "Hôm qua là thứ 7", japanese: "きのうはどようびでした"},
-                {vietnamese: "Hôm kia là thứ mấy", japanese: "おとといはなにようびでしたか"},
+                {vietnamese: "Hôm kia là thứ mấy", japanese: "おとといはなんようびでしたか"},
                 {vietnamese: "Hôm qua không phải thứ 4", japanese: "きのうはすいようびではありませんでした"},
                 {vietnamese: "Hôm qua trời có mưa không?", japanese: "きのうはあめでしたか"},
-                {vietnamese: "Hôm qua tời không nắng", japanese: "きのうははれではありませんでした"},
+                {vietnamese: "Hôm qua trời không nắng", japanese: "きのうははれではありませんでした"},
             ],
             exercise6: [
                 {
@@ -301,7 +301,7 @@ const dataQuizTemplates = {
                     correct: 3
                 },
                 {
-                    sentence: "Minhさんは ほん_____まんすき ですか。",
+                    sentence: "Minhさんは ほん_____まんががすき ですか。",
                     options: ["と", "どれ", "なんの", "いくら"],
                     correct: 0
                 },
