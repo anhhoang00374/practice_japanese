@@ -1,4 +1,374 @@
 const dataQuizTemplates = {
+    quiz10: {
+        title: "Bài test 22",
+        description: "Cách nói ngày tháng",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'にじゅうはちにち' có nghĩa là gì?",
+                    options: ["ngày 27", "ngày 29", "ngày 28", "ngày 26"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'よっか' có nghĩa là gì?",
+                    options: ["ngày 5", "ngày 4", "ngày 3", "ngày 6"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅうくにち' có nghĩa là gì?",
+                    options: ["ngày 20", "ngày 18", "ngày 19", "ngày 17"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ついたち' có nghĩa là gì?",
+                    options: ["ngày 1", "ngày 2", "ngày 3", "ngày 4"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'にじゅうごにち' có nghĩa là gì?",
+                    options: ["ngày 24", "ngày 25", "ngày 26", "ngày 23"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅうさんにち' có nghĩa là gì?",
+                    options: ["ngày 12", "ngày 14", "ngày 13", "ngày 15"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'ここのか' có nghĩa là gì?",
+                    options: ["ngày 10", "ngày 8", "ngày 9", "ngày 7"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にじゅういちにち' có nghĩa là gì?",
+                    options: ["ngày 19", "ngày 22", "ngày 20", "ngày 21"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'じゅうろくにち' có nghĩa là gì?",
+                    options: ["ngày 15", "ngày 16", "ngày 17", "ngày 14"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ふつか' có nghĩa là gì?",
+                    options: ["ngày 3", "ngày 1", "ngày 2", "ngày 4"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にじゅうくにち' có nghĩa là gì?",
+                    options: ["ngày 30", "ngày 28", "ngày 27", "ngày 29"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'さんじゅういちにち' có nghĩa là gì?",
+                    options: ["ngày 29", "ngày 31", "ngày 30", "ngày 28"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'なのか' có nghĩa là gì?",
+                    options: ["ngày 6", "ngày 8", "ngày 7", "ngày 9"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にじゅうろくにち' có nghĩa là gì?",
+                    options: ["ngày 25", "ngày 26", "ngày 24", "ngày 27"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅうごにち' có nghĩa là gì?",
+                    options: ["ngày 13", "ngày 15", "ngày 14", "ngày 16"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'みっか' có nghĩa là gì?",
+                    options: ["ngày 4", "ngày 2", "ngày 5", "ngày 3"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'にじゅうよっか' có nghĩa là gì?",
+                    options: ["ngày 22", "ngày 23", "ngày 24", "ngày 25"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'むいか' có nghĩa là gì?",
+                    options: ["ngày 6", "ngày 7", "ngày 5", "ngày 8"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'はつか' có nghĩa là gì?",
+                    options: ["ngày 18", "ngày 20", "ngày 21", "ngày 19"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅうしちにち' có nghĩa là gì?",
+                    options: ["ngày 16", "ngày 18", "ngày 17", "ngày 15"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'にじゅうににち' có nghĩa là gì?",
+                    options: ["ngày 22", "ngày 21", "ngày 20", "ngày 23"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'さんじゅうにち' có nghĩa là gì?",
+                    options: ["ngày 31", "ngày 29", "ngày 30", "ngày 28"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'じゅうよっか' có nghĩa là gì?",
+                    options: ["ngày 13", "ngày 14", "ngày 15", "ngày 12"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'にじゅうしちにち' có nghĩa là gì?",
+                    options: ["ngày 26", "ngày 27", "ngày 28", "ngày 25"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じゅういちにち' có nghĩa là gì?",
+                    options: ["ngày 10", "ngày 12", "ngày 11", "ngày 13"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'じゅうににち' có nghĩa là gì?",
+                    options: ["ngày 12", "ngày 13", "ngày 11", "ngày 14"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'いつか' có nghĩa là gì?",
+                    options: ["ngày 5", "ngày 4", "ngày 6", "ngày 7"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ようか' có nghĩa là gì?",
+                    options: ["ngày 7", "ngày 9", "ngày 10", "ngày 8"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'じゅうはちにち' có nghĩa là gì?",
+                    options: ["ngày 18", "ngày 17", "ngày 19", "ngày 16"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'にじゅうさんにち' có nghĩa là gì?",
+                    options: ["ngày 24", "ngày 23", "ngày 22", "ngày 21"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'とおか' có nghĩa là gì?",
+                    options: ["ngày 11", "ngày 10", "ngày 8", "ngày 9"],
+                    correct: 1
+                },
+                {
+                    question: "'đồng hồ' trong tiếng Nhật là gì?",
+                    options: ["ノート", "とけい", "ペン", "さいふ"],
+                    correct: 1
+                },
+                {
+                    question: "'ví' trong tiếng Nhật là gì?",
+                    options: ["くつ", "さいふ", "ぼうし", "テレビ"],
+                    correct: 1
+                },
+                {
+                    question: "'mũ' trong tiếng Nhật là gì?",
+                    options: ["パソコン", "かばん", "ぼうし", "じしょ"],
+                    correct: 2
+                },
+                {
+                    question: "'tivi' trong tiếng Nhật là gì?",
+                    options: ["けいたいでんわ", "テレビ", "つくえ", "ノート"],
+                    correct: 1
+                },
+                {
+                    question: "'cái bàn' trong tiếng Nhật là gì?",
+                    options: ["ペン", "つくえ", "とけい", "くつ"],
+                    correct: 1
+                },
+                {
+                    question: "'từ điển' trong tiếng Nhật là gì?",
+                    options: ["じしょ", "ノート", "かばん", "さいふ"],
+                    correct: 0
+                },
+                {
+                    question: "'cái túi, cái cặp' trong tiếng Nhật là gì?",
+                    options: ["パソコン", "かばん", "ぼうし", "テレビ"],
+                    correct: 1
+                },
+                {
+                    question: "'điện thoại di động' trong tiếng Nhật là gì?",
+                    options: ["ペン", "けいたいでんわ", "つくえ", "じしょ"],
+                    correct: 1
+                },
+                {
+                    question: "'vở, tập' trong tiếng Nhật là gì?",
+                    options: ["ノート", "とけい", "さいふ", "くつ"],
+                    correct: 0
+                },
+                {
+                    question: "'máy tính xách tay' trong tiếng Nhật là gì?",
+                    options: ["テレビ", "パソコン", "かばん", "ペン"],
+                    correct: 1
+                },
+                {
+                    question: "'giày' trong tiếng Nhật là gì?",
+                    options: ["ぼうし", "けいたいでんわ", "くつ", "ノート"],
+                    correct: 2
+                },
+                {
+                    question: "'bút bi' trong tiếng Nhật là gì?",
+                    options: ["つくえ", "じしょ", "ペン", "パソコン"],
+                    correct: 2
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "昨日はアルバイトでしたか" },
+                    { "text": "おとといは仕事でしたか" },
+                    { "text": "きのうはアルバイトでしたか" },
+                    { "text": "きょうはなんがつなんにちですか" },
+                    { "text": "あなたのたんじょうびはじゅうがつふつかですか" }
+                ],
+                "columnB": [
+                    { "text": "いいえ、アルバイトではありませんでした" },
+                    { "text": "いいえ、じゅういちがつふつかです" },
+                    { "text": "ごがついつかです" },
+                    { "text": "はい、そうです" },
+                    { "text": "いいえ、アルバイトでした" }
+                ],
+                "correct": [
+                    [0, 3],
+                    [1, 4],
+                    [2, 0],
+                    [3, 2],
+                    [4, 1]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "とおか",
+                        "おととい",
+                        "しごと"
+                    ],
+                    correctAnswer: "と",
+                    hint: "Có một từ vựng liên quan tới thời gian, ngày trong tháng, thường là ngày 10"
+                },
+                {
+                    words: [
+                        "つくえ",
+                        "くつ",
+                        "どうぶつ"
+                    ],
+                    correctAnswer: "し",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để làm việc, học tập hoặc sinh hoạt hàng ngày, thường có bốn chân và mặt phẳng để đặt đồ vật lên trên"
+                },
+                {
+                    words: [
+                        "なつ",
+                        "しゅうまつ",
+                        "いちがつ"
+                    ],
+                    correctAnswer: "つ",
+                    hint: "Có một từ  vựng liên quan tới thời tiết, mùa trong năm, thường có nắng và nóng"
+                },
+                {
+                    words: [
+                        "ノート",
+                        "スポーツ",
+                        "カレンダー"
+                    ],
+                    correctAnswer: "ー",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để ghi chép, học tập hoặc làm việc, thường có nhiều trang giấy bên trong"
+                }
+                ,
+                {
+                    words: [
+                        "ペン",
+                        "パソコン",
+                        "シャープペンシル"
+                    ],
+                    correctAnswer: "ン",
+                    hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để viết hoặc vẽ trên giấy"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["エンジニ", " ?"],
+                        ["? ", " メリ ", " ?"],
+                        ["? ", " ンボジア"]
+                    ],
+                    correctSequence: ["エンジニア", "アメリカ", "カンボジア"]
+                },
+                {
+                    words: [
+                        ["コー ", " ?"],
+                        ["? ", " オ ", " ?"],
+                        ["?", " ーパー"]
+                    ],
+                    correctSequence: ["コーラ", "ラオス", "スーパー"]
+                },
+                {
+                    words: [
+                        ["ぼう ", " ?"],
+                        ["?", "ご", " ?"],
+                        ["? ", " けい"],
+                    ],
+                    correctSequence: ["ぼうし", "しごと", "とけい"]
+                },
+                {
+                    words: [
+                        ["さい ", " ?"],
+                        ["?", " つ", " ?"],
+                        ["? ", " ぞく"],
+                    ],
+                    correctSequence: ["さいふ", "ふつか", "かぞく"]
+                },
+                {
+                    words: [
+                        ["きょうし ", " ?"],
+                        ["?", " いた ", " ?"],
+                        ["? ", " ず"],
+                    ],
+                    correctSequence: ["きょうしつ", "ついたち", "ちず"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "hôm qua không phải là thứ 7", japanese: "きのうはどようびではありませんでした"},
+                {vietnamese: "Sinh nhật của tôi là ngày 20 tháng 3", japanese: "わたしのたんじょうびはさんがつはつかです"},
+                {vietnamese: "Ngày nhà giáo là ngày mấy tháng mấy", japanese: "せんせいのひはなんがつなんにちですか"},
+                {vietnamese: "hôm qua không phải là ngày 5 tháng 5", japanese: "きのうはごがついつかではありませんでした"},
+                {vietnamese: "thứ 5 tuân trước là ngày 27 tháng 2", japanese: "せんしゅうのもくようびはにがつにじゅうななにちでした" },
+            ],
+            exercise6: [
+                {
+                    sentence: "きのう は _____がつ_____にちでしたか。",
+                    options: ["どこ", "だれ", "なん", "なに"],
+                    correct: 2
+                },
+                {
+                    sentence: "わたしは _____ ではありません。",
+                    options: ["ふつか", "かいしゃいん", "げつようび", "いちがつ"],
+                    correct: 1
+                },
+                {
+                    sentence: "わたしはまんが_____はな がすきです",
+                    options: ["だれ", "どこ", "なんようび", "と"],
+                    correct: 3
+                },
+                {
+                    sentence: "おしごとは _____ ですか。",
+                    options: ["なん", "どれ", "なんの", "いくら"],
+                    correct: 0
+                },
+                {
+                    sentence: "かぞくは_____ですか。",
+                    options: ["だれが", "なにじん", "なんにん", "なんの"],
+                    correct: 2
+                }
+            ]
+        }
+    },
     quiz9: {
         title: "Bài test 21",
         description: "Quá khứ của danh từ",
@@ -81,7 +451,7 @@ const dataQuizTemplates = {
                 },
                 {
                     question: "Từ 'らいしゅう' có nghĩa là gì?",
-                    options: ["ngày 10", "ngày 11", "ngày 7", "ngày 6"],
+                    options: ["ngày 10", "ngày 11", "tuần sau", "ngày 6"],
                     correct: 2
                 },
                 {
