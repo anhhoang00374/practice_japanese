@@ -222,8 +222,8 @@ const dataQuizTemplates = {
             ],
             exercise2: {
                 "columnA": [
-                    { "text": "昨日はアルバイトでしたか" },
-                    { "text": "おとといは仕事でしたか" },
+                    { "text": "きのうはあめでしたか" },
+                    { "text": "おとといはやすみでしたか" },
                     { "text": "きのうはアルバイトでしたか" },
                     { "text": "きょうはなんがつなんにちですか" },
                     { "text": "あなたのたんじょうびはじゅうがつふつかですか" }
@@ -259,7 +259,7 @@ const dataQuizTemplates = {
                         "くつ",
                         "どうぶつ"
                     ],
-                    correctAnswer: "し",
+                    correctAnswer: "つ",
                     hint: "Có một từ vựng liên quan tới vật dụng, phụ kiện được dùng để làm việc, học tập hoặc sinh hoạt hàng ngày, thường có bốn chân và mặt phẳng để đặt đồ vật lên trên"
                 },
                 {
@@ -338,7 +338,7 @@ const dataQuizTemplates = {
                 {vietnamese: "Sinh nhật của tôi là ngày 20 tháng 3", japanese: "わたしのたんじょうびはさんがつはつかです"},
                 {vietnamese: "Ngày nhà giáo là ngày mấy tháng mấy", japanese: "せんせいのひはなんがつなんにちですか"},
                 {vietnamese: "hôm qua không phải là ngày 5 tháng 5", japanese: "きのうはごがついつかではありませんでした"},
-                {vietnamese: "thứ 5 tuân trước là ngày 27 tháng 2", japanese: "せんしゅうのもくようびはにがつにじゅうななにちでした" },
+                {vietnamese: "thứ 5 tuần trước là ngày 27 tháng 2", japanese: "せんしゅうのもくようびはにがつにじゅうしちにちでした" },
             ],
             exercise6: [
                 {
