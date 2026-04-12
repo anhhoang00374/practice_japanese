@@ -66,7 +66,7 @@ const dataQuizTemplates = {
                 },
                 {
                     question: "Từ 'カレンダー' có nghĩa là gì?",
-                    options: ["lịch", "bản đồ", "keo gián", "thể thao"],
+                    options: ["lịch", "bản đồ", "keo dán", "thể thao"],
                     correct: 0
                 },
                 {
@@ -86,12 +86,12 @@ const dataQuizTemplates = {
                 },
                 {
                     question: "Từ 'りょうり' có nghĩa là gì?",
-                    options: ["món ăn, thức ăn", "động vật", "bút bi", "keo gián"],
+                    options: ["món ăn, thức ăn", "động vật", "bút bi", "keo dán"],
                     correct: 0
                 },
                 {
                     question: "Từ 'のり' có nghĩa là gì?",
-                    options: ["vở", "keo gián", "hộp bút", "kéo"],
+                    options: ["vở", "keo dán", "hộp bút", "kéo"],
                     correct: 1
                 },
                 {
@@ -111,7 +111,7 @@ const dataQuizTemplates = {
                 },
                 {
                     question: "Từ 'しゅうせいえき' có nghĩa là gì?",
-                    options: ["bút chì kim", "bút xóa", "cục tẩy", "keo gián"],
+                    options: ["bút chì kim", "bút xóa", "cục tẩy", "keo dán"],
                     correct: 1
                 },
                 {
@@ -124,8 +124,8 @@ const dataQuizTemplates = {
                 "columnA": [
                     { "text": "なつはなんがつからですか" },
                     { "text": "かいぎはなんじまでですか？" },
-                    { "text": "きのうしごとでしたか" },
-                    { "text": "けさアルバイトでしたか" },
+                    { "text": "きのうはしごとでしたか" },
+                    { "text": "けさはアルバイトでしたか" },
                     { "text": "あのひとはだれですか" },
                     { "text": "これはだれのほんですか" }
                 ],
