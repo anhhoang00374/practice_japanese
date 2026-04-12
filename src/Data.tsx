@@ -1,4 +1,277 @@
 const dataQuizTemplates = {
+    quiz11: {
+        title: "Bài test 23",
+        description: "Cách nói から　まで",
+        exercises: {
+            exercise1: [
+                {
+                    question: "Từ 'じゅぎょう' có nghĩa là gì?",
+                    options: ["Bài kiểm tra", "Buổi học", "Cuộc họp", "Tháng sau"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'こんげつ' có nghĩa là gì?",
+                    options: ["Tháng trước", "Tháng này", "Năm nay", "Năm sau"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'らいねん' có nghĩa là gì?",
+                    options: ["Năm trước", "Năm sau", "Năm nay", "Tháng sau"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ことし' có nghĩa là gì?",
+                    options: ["Năm nay", "Năm sau", "Tháng này", "Buổi học"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'かいぎ' có nghĩa là gì?",
+                    options: ["Buổi học", "Cuộc họp", "Bài kiểm tra", "Tháng trước"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'せんげつ' có nghĩa là gì?",
+                    options: ["Tháng này", "Tháng sau", "Tháng trước", "Năm trước"],
+                    correct: 2
+                },
+                {
+                    question: "Từ 'きょねん' có nghĩa là gì?",
+                    options: ["Năm trước", "Năm nay", "Năm sau", "Tháng trước"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'テスト' có nghĩa là gì?",
+                    options: ["Bài kiểm tra", "Buổi học", "Cuộc họp", "Tháng này"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'らいげつ' có nghĩa là gì?",
+                    options: ["Tháng trước", "Tháng này", "Năm sau", "Tháng sau"],
+                    correct: 3
+                },
+                {
+                    question: "Từ 'ペンケース' có nghĩa là gì?",
+                    options: ["vở", "hộp bút", "thước", "bản đồ"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ボールペン' có nghĩa là gì?",
+                    options: ["bút chì kim", "bút bi", "kéo", "lịch"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'じょうぎ' có nghĩa là gì?",
+                    options: ["hộp bút", "thước", "vở", "động vật"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'カレンダー' có nghĩa là gì?",
+                    options: ["lịch", "bản đồ", "keo gián", "thể thao"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'どうぶつ' có nghĩa là gì?",
+                    options: ["món ăn, thức ăn", "động vật", "thể thao", "lịch"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'けしゴム' có nghĩa là gì?",
+                    options: ["kéo", "cục tẩy", "bút xóa", "vở"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'スポーツ' có nghĩa là gì?",
+                    options: ["động vật", "thể thao", "bản đồ", "thước"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'りょうり' có nghĩa là gì?",
+                    options: ["món ăn, thức ăn", "động vật", "bút bi", "keo gián"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'のり' có nghĩa là gì?",
+                    options: ["vở", "keo gián", "hộp bút", "kéo"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'ノート' có nghĩa là gì?",
+                    options: ["thước", "vở", "bản đồ", "bút chì kim"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'はさみ' có nghĩa là gì?",
+                    options: ["kéo", "cục tẩy", "lịch", "bút bi"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'ちず' có nghĩa là gì?",
+                    options: ["bản đồ", "vở", "thể thao", "bút xóa"],
+                    correct: 0
+                },
+                {
+                    question: "Từ 'しゅうせいえき' có nghĩa là gì?",
+                    options: ["bút chì kim", "bút xóa", "cục tẩy", "keo gián"],
+                    correct: 1
+                },
+                {
+                    question: "Từ 'シャープペンシル' có nghĩa là gì?",
+                    options: ["bút chì kim", "bút bi", "thước", "món ăn, thức ăn"],
+                    correct: 0
+                }
+            ],
+            exercise2: {
+                "columnA": [
+                    { "text": "なつはなんがつからですか" },
+                    { "text": "かいぎはなんじまでですか？" },
+                    { "text": "きのうしごとでしたか" },
+                    { "text": "けさアルバイトでしたか" },
+                    { "text": "あのひとはだれですか" },
+                    { "text": "これはだれのほんですか" }
+                ],
+                "columnB": [
+                    { "text": "やまださんのです" },
+                    { "text": "ごじまでです" },
+                    { "text": "いいえ、アルバイトではありませんでした" },
+                    { "text": "しちがつからです" },
+                    { "text": "やまださんです" },
+                    { "text": "いいえ、やすみでした" }
+                ],
+                "correct": [
+                    [0, 3],
+                    [1, 1],
+                    [2, 5],
+                    [3, 2],
+                    [4, 4],
+                    [5, 0]
+                ]
+            },
+            exercise3: [
+                {
+                    words: [
+                        "うち",
+                        "こうえん",
+                        "がっこう"
+                    ],
+                    correctAnswer: "う",
+                    hint: "Có một từ vựng liên quan tới địa điểm, nơi chốn, thường là nơi mà con người sinh sống, nghỉ ngơi và trở về sau một ngày làm việc hoặc học tập"
+                },
+                {
+                    words: [
+                        "しごと",
+                        "かいしゃ",
+                        "きょうしつ"
+                    ],
+                    correctAnswer: "し",
+                    hint: "Có một từ vựng liên quan đến địa điểm"
+                },
+                {
+                    words: [
+                        "あさ",
+                        "まいあさ",
+                        "さんがつ"
+                    ],
+                    correctAnswer: "さ",
+                    hint: "Có một từ  vựng liên quan tới thời gian"
+                },
+                {
+                    words: [
+                        "おととい",
+                        "とおか",
+                        "おとうさん"
+                    ],
+                    correctAnswer: "と",
+                    hint: "Có một từ vựng liên quan tới thời gian, ngày trong tháng"
+                }
+                ,
+                {
+                    words: [
+                        "かいぎ",
+                        "じゅぎょう",
+                        "ぎんこう"
+                    ],
+                    correctAnswer: "ぎ",
+                    hint: "Có một từ vựng liên quan đến địa điểm, nơi chốn"
+                }
+            ],
+            exercise4: [
+                {
+                    words: [
+                        ["きの", " ?"],
+                        ["? ", " ?"],
+                        ["? ", " ゅうごく"]
+                    ],
+                    correctSequence: ["きのう", "うち", "ちゅうごく"]
+                },
+                {
+                    words: [
+                        ["ここの", " ?"],
+                        ["? ", " い ", " ?"],
+                        ["?", " ゅうにゅう"]
+                    ],
+                    correctSequence: ["ここのか", "かいぎ", "ぎゅうにゅう"]
+                },
+                {
+                    words: [
+                        ["しょうがくせ ", " ?"],
+                        ["?", "もう", " ?"],
+                        ["? ", " おか"],
+                    ],
+                    correctSequence: ["しょうがくせい", "いもうと", "とおか"]
+                },
+                {
+                    words: [
+                        ["まいあ ", " ?"],
+                        ["?", " か", " ?"],
+                        ["? ", " つ"],
+                    ],
+                    correctSequence: ["まいあさ", "さかな", "なつ"]
+                },
+                {
+                    words: [
+                        ["は ", " ?"],
+                        ["?", " んしゅ ", " ?"],
+                        ["? ", " ち"],
+                    ],
+                    correctSequence: ["はれ", "れんしゅう", "うち"]
+                }
+            ],
+            exercise5: [
+                {vietnamese: "Cuộc hợp bắt đầu từ 5h đến 7h", japanese: "かいぎはごじからしちじまでです"},
+                {vietnamese: "bài kiểm tra băt đầu từ mấy giờ", japanese: "テストはなんじからですか"},
+                {vietnamese: "Sinh nhật của bạn là ngày mấy tháng mấy", japanese: "あなたのたんじょうびはなんがつなんにちですか"},
+                {vietnamese: "Hôm qua không phải là thứ 2", japanese: "きのうはげつようびではありませんでした"},
+                {vietnamese: "Hôm kia là sinh nhật của tôi", japanese: "おとといはわたしのたんんじょうびでした" },
+            ],
+            exercise6: [
+                {
+                    sentence: "まいにち_____から_____までねますか。",
+                    options: ["なんじ", "なんにち", "なんようび", "なんがつ"],
+                    correct: 0
+                },
+                {
+                    sentence: "なつは _____ からですか。",
+                    options: ["なんじ", "なんにち", "なんようび", "なんがつ"],
+                    correct: 3
+                },
+                {
+                    sentence: "せんげつの_____はわたしのたんんじょうびです",
+                    options: ["ろくじ", "げつようび", "にがつ", "とおか"],
+                    correct: 3
+                },
+                {
+                    sentence: "あのひとは _____ ですか。",
+                    options: ["だれ", "どれ", "なんの", "いくら"],
+                    correct: 0
+                },
+                {
+                    sentence: "クラスは_____ですか。",
+                    options: ["だれが", "なにじん", "なんにん", "なんの"],
+                    correct: 2
+                }
+            ]
+        }
+    },
     quiz10: {
         title: "Bài test 22",
         description: "Cách nói ngày tháng",
