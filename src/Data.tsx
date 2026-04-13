@@ -241,7 +241,7 @@ const dataQuizTemplates = {
                 {vietnamese: "bài kiểm tra bắt đầu từ mấy giờ", japanese: "テストはなんじからですか"},
                 {vietnamese: "Sinh nhật của bạn là ngày mấy tháng mấy", japanese: "あなたのたんじょうびはなんがつなんにちですか"},
                 {vietnamese: "Hôm qua không phải là thứ 2", japanese: "きのうはげつようびではありませんでした"},
-                {vietnamese: "Hôm kia là sinh nhật của tôi", japanese: "おとといはわたしのたんんじょうびでした" },
+                {vietnamese: "Hôm kia là sinh nhật của tôi", japanese: "おとといはわたしのたんじょうびでした" },
             ],
             exercise6: [
                 {
