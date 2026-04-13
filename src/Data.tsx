@@ -237,8 +237,8 @@ const dataQuizTemplates = {
                 }
             ],
             exercise5: [
-                {vietnamese: "Cuộc hợp bắt đầu từ 5h đến 7h", japanese: "かいぎはごじからしちじまでです"},
-                {vietnamese: "bài kiểm tra băt đầu từ mấy giờ", japanese: "テストはなんじからですか"},
+                {vietnamese: "Cuộc họp bắt đầu từ 5h đến 7h", japanese: "かいぎはごじからしちじまでです"},
+                {vietnamese: "bài kiểm tra bắt đầu từ mấy giờ", japanese: "テストはなんじからですか"},
                 {vietnamese: "Sinh nhật của bạn là ngày mấy tháng mấy", japanese: "あなたのたんじょうびはなんがつなんにちですか"},
                 {vietnamese: "Hôm qua không phải là thứ 2", japanese: "きのうはげつようびではありませんでした"},
                 {vietnamese: "Hôm kia là sinh nhật của tôi", japanese: "おとといはわたしのたんんじょうびでした" },
@@ -255,7 +255,7 @@ const dataQuizTemplates = {
                     correct: 3
                 },
                 {
-                    sentence: "せんげつの_____はわたしのたんんじょうびです",
+                    sentence: "せんげつの_____はわたしのたんじょうびです",
                     options: ["ろくじ", "げつようび", "にがつ", "とおか"],
                     correct: 3
                 },
